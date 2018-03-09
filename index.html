@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>好太太集团</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+		<meta content="yes" name="apple-mobile-web-app-capable"/>
+		<meta content="black" name="apple-mobile-web-app-status-bar-style"/>
+		<meta content="telephone=no" name="format-detection"/>
+		<link href="https://cdn.bootcss.com/animate.css/3.5.2/animate.min.css" rel="stylesheet">
+		<link rel="stylesheet" href="css/reset.css" />
+		<link rel="stylesheet" href="css/index.css" />
+		<script type="text/javascript" src="js/rem.js" ></script>
+		<script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+	</head>
+	<body>
+		<!--删除不良信息-->
+		<div class="delete1" hidden="hidden"></div>
+		<!--音乐-->
+		<audio id="bg" autoplay="autoplay"  loop="loop" preload  src="music/bg.mp3" hidden="hidden"></audio >
+		<!--音乐按钮-->
+		<img src="img/music.png" id="music" />
+		<!--首页-->
+		<div id="homepage">
+			<div class="home1 home">
+				<img src="img/home1.png" />
+			</div>
+			<div class="home2 home">
+				<img src="img/home2.png" />
+			</div>
+			<div class="home3 home">
+				<img src="img/home3.png" />
+			</div>
+			<div class="home4 home">
+				<img src="img/home4.png" />
+			</div>
+			<div class="home5 home">
+				<img src="img/home5.png" />
+			</div>
+			<div class="homep home">
+				<nobr><p>活动时间：2018/3/15-2018/5/6</p></nobr>
+			</div>
+			<input type="image" src="img/homeBtn1.png" class="oldNew home" />
+			<input type="image" src="img/homeBtn2.png" class="look home" />
+			<div class="flower">
+				<div class="flIn">
+					<img src="img/fl1.png" />
+				</div>
+			</div>
+		</div>
+		<script>
+		    //微信加入聊天
+			function audioAutoPlay(id,v){
+				var audio = document.getElementById(id);
+				    audio.play();
+				    if(v==0)
+				    {
+				    	audio.pause();
+				    }
+				    document.addEventListener("WeixinJSBridgeReady", function () {
+				            audio.play();
+				            if(v==0)
+						    {
+						    	audio.pause();
+						    }
+				    }, false);
+				}    
+			audioAutoPlay('bg');
+	    </script>
+		<script type="text/javascript" src="js/index.js" ></script>
+		<!--删除不良信息-->
+		<div class="delete2" hidden="hidden"></div>
+	</body>
+</html>
