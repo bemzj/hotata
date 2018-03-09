@@ -36,8 +36,8 @@ $(function(){
 //显示首页
 function showHome(){
 	//时间控制
+	$('.flower').remove();
 	var sTime = 250;
-	var eTime = 500;
 	var oTime = 1000;
 	$('.home2').show().find('img').addClass('animated bounceIn');
 	setTimeout(function(){
@@ -55,5 +55,24 @@ function showHome(){
 			},sTime);
 		},sTime);
 	},sTime);
+	var nIndex = 1;
+	var numb = 0;
+	var eTime = setInterval(function(){
+		flower('#homepage',nIndex,numb,1500);
+		nIndex++;
+		numb++;
+		if(nIndex==4)
+		{
+			nIndex=1;
+		}
+	},750);
+}
+//烟花
+function flower(id,n,numb,time){
+	var html = '<div class="flower flower'+n+' flower'+numb+'"><div class="flIn"><img src="img/fl1.png" /></div></div>'
+	$(id).append(html);
+	setTimeout(function(){
+		$('.flower'+numb).remove();
+	},time);
 	
 }

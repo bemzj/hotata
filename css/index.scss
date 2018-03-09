@@ -89,48 +89,68 @@ body{
 .home{
     display: none;
 }
-.flower{
-    width: 19.33%;
-    position: absolute;
-    top: 20.8%;
-    left: 2.13%;
-    .flIn{
-        width: 0%;
-        margin-left: 50%;
-        margin-top: 50%;
-        overflow: hidden;
-        animation: flb 1s linear infinite;
-        -moz-animation: flb 1s linear infinite;
-        -webkit-animation: flb 1s linear infinite;
-        -ms-animation: flb 1s linear infinite;
-        >img{
-            width: 100%;
-        }
+.flIn {
+    width: 0%;
+    margin-left: 50%;
+    margin-top: 50%;
+    overflow: hidden;
+    animation: flb 1.5s linear;
+    -moz-animation: flb 1.5s linear;
+    -webkit-animation: flb 1.5s linear;
+    -ms-animation: flb 1.5s linear;
+    >img {
+        width: 100%;
     }
+}
+.flower1{
+    width: 19%;
+    position: absolute;
+    top: 21%;
+    left: 2.5%;
+    
+}
+.flower2{
+    width: 15%;
+    position: absolute;
+    top: 10%;
+    left: 33%;
+}
+.flower3{
+    width: 12%;
+    position: absolute;
+    top: 19%;
+    left: 67%;
 }
 @keyframes flb
 {
    0% {opacity: 1;margin-left: 50%;width: 0%;margin-top: 50%;}
-    100% {width: 100%;margin-left: 0%;margin-top: 0%;}
+    80% {opacity: 1;width: 100%;margin-left: 0%;margin-top: 0%;}
+    100% {opacity: 0;width: 100%;margin-left: 0%;margin-top: 0%;}
+
 
 }
 
 @-moz-keyframes flb
 {
-   0% {opacity: 1;margin-left: 50%;width: 0%;margin-top: 50%;}
-    100% {width: 100%;margin-left: 0%;margin-top: 0%;}
+ 0% {opacity: 1;margin-left: 50%;width: 0%;margin-top: 50%;}
+    80% {opacity: 1;width: 100%;margin-left: 0%;margin-top: 0%;}
+    100% {opacity: 0;width: 100%;margin-left: 0%;margin-top: 0%;}
+
 
 }
 
 @-webkit-keyframes flb 
 {
-    0% {opacity: 1;margin-left: 50%;width: 0%;margin-top: 50%;}
-    100% {width: 100%;margin-left: 0%;margin-top: 0%;}
+   0% {opacity: 1;margin-left: 50%;width: 0%;margin-top: 50%;}
+    80% {opacity: 1;width: 100%;margin-left: 0%;margin-top: 0%;}
+    100% {opacity: 0;width: 100%;margin-left: 0%;margin-top: 0%;}
 
 }
 @-ms-keyframes flb
 {
    0% {opacity: 1;margin-left: 50%;width: 0%;margin-top: 50%;}
-    100% {width: 100%;margin-left: 0%;margin-top: 0%;}
+    80% {opacity: 1;width: 100%;margin-left: 0%;margin-top: 0%;}
+    100% {opacity: 0;width: 100%;margin-left: 0%;margin-top: 0%;}
+
 
 }
