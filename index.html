@@ -19,9 +19,9 @@
 		<!--音乐-->
 		<audio id="bg" autoplay="autoplay"  loop="loop" preload  src="music/bg.mp3" hidden="hidden"></audio >
 		<!--音乐按钮-->
-		<img src="img/music.png" id="music" />
+		<img src="img/music.png" id="music"/>
 		<!--首页-->
-		<div id="homepage">
+		<div id="homepage"  style="display: none;">
 			<div class="home1 home">
 				<img src="img/home1.png" />
 			</div>
@@ -42,8 +42,75 @@
 			</div>
 			<input type="image" src="img/homeBtn1.png" class="oldNew home" />
 			<input type="image" src="img/homeBtn2.png" class="look home" />
-			
 		</div>
+		<!--我的活动码-->
+		<div id="myCode" style="display: none;">
+			<div class="rback">
+				<input type="image" src="img/return.png" />
+			</div>
+			<div class="mc mc01">
+				<img src="img/mc01.png" />
+			</div>
+			<div class="mc mc02">
+				<img src="img/mc02.png" />
+				<button class="fiveYuan"><p>购买</p></button>
+				<button class="threeYuan"><p>查看</p></button>
+			</div>
+			<div class="mc mc03">
+				<img src="img/mc03.png" />
+			</div>
+			<div class="mc shareBtn">
+				<input type="image" src="img/share.png"/>
+			</div>
+		</div>
+		<!--购买第一步-->
+		<div id="buyStep01">
+			<div class="rback">
+				<input type="image" src="img/return.png" />
+			</div>
+			<div class="buystep01">
+				<div class="bsTitle">
+					<img src="img/bf01.png" />
+				</div>
+				<div class="inputBox">
+					<p>姓名</p>
+					<input type="text" placeholder="请输入您的姓名"/>
+				</div>
+				<div class="inputBox">
+					<p>联系方式</p>
+					<input type="text" placeholder="请输入您的手机号码"/>
+				</div>
+				<div class="inputBox">
+					<p>旧款品牌</p>
+					<input type="text" placeholder="请输入使用的旧款品牌"/>
+				</div>
+				<div class="inputBox">
+					<p>旧款照片</p>
+					<div class="imageBox">
+						<div class="ibIn">
+							
+						</div>
+						<!--<div class="floatl">
+							<div class="imgIn">
+								<img src="img/back.jpg" />
+							</div>
+							<img src="img/bf02.png" />
+							<button></button>
+						</div>-->
+						<div class="floatl">
+							<img src="img/bf02.png" />
+							<input type="file" id="file" accept="image/*" capture="camera">
+						</div>
+						<div class="clearl"></div>
+					</div>
+					
+				</div>
+				<div class="nextBtn">
+					<input type="image" src="img/bf04.png" />
+				</div>
+			</div>
+		</div>	
+		
 		<script>
 		    //微信加入聊天
 			function audioAutoPlay(id,v){
@@ -63,6 +130,7 @@
 				}    
 			audioAutoPlay('bg');
 	    </script>
+	    <script type="text/javascript" src="js/share-code-pop.js" ></script>
 		<script type="text/javascript" src="js/index.js" ></script>
 		<!--删除不良信息-->
 		<div class="delete2" hidden="hidden"></div>

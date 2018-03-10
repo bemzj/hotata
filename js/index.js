@@ -28,13 +28,22 @@ $(function(){
 			}, 10);
 			$('#bg')[0].play();
 		}
-	
 	});
-	//
-	showHome();
+//	mycodes();
+	$('#file').on('change',function(){
+		var html = "";
+		html += '<div class="floatl"><div class="imgIn"><img src="'+$(this).val()+'" /></div><img src="img/bf02.png" />';
+		html += '<button></button></div>';
+		$('.ibIn').append(html);
+		
+		$('.imgIn').nextAll('button').on('click',function(){
+			$(this).parent('.floatl').remove();
+		});
+	});
 });
 //显示首页
 function showHome(){
+	$('#homepage').show();
 	//时间控制
 	$('.flower').remove();
 	var sTime = 250;
@@ -58,7 +67,7 @@ function showHome(){
 	var nIndex = 1;
 	var numb = 0;
 	var eTime = setInterval(function(){
-		flower('#homepage',nIndex,numb,1500);
+		flower('#homepage',nIndex,numb,3000);
 		nIndex++;
 		numb++;
 		if(nIndex==4)
@@ -66,6 +75,26 @@ function showHome(){
 			nIndex=1;
 		}
 	},750);
+	$('.oldNew').on('click',function(){
+		$('#homepage').hide();
+		$('.flower').remove();
+		clearInterval(eTime);
+		$('.home').hide().find('img').removeClass();
+		$('.homep').hide().removeClass('animated fadeInDown');
+		$('.oldNew').hide().removeClass('animated rotateInDownLeft');
+		$('.look').hide().removeClass('animated rotateInUpRight');
+		showHome();
+	});
+	$('.look').on('click',function(){
+		$('#homepage').hide();
+		$('.flower').remove();
+		clearInterval(eTime);
+		$('.home').hide().find('img').removeClass();
+		$('.homep').hide().removeClass('animated fadeInDown');
+		$('.oldNew').hide().removeClass('animated rotateInDownLeft');
+		$('.look').hide().removeClass('animated rotateInUpRight');
+		showHome();
+	});
 }
 //烟花
 function flower(id,n,numb,time){
