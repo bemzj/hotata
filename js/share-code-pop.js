@@ -22,7 +22,7 @@ function mycodes(){
 			//购买
 			case 0:
 				popWin(1,"",function(){
-					
+					buying();
 				});
 				break;
 		}

@@ -29,7 +29,7 @@ $(function(){
 			$('#bg')[0].play();
 		}
 	});
-//	mycodes();
+	mycodes();
 	$('#file').on('change',function(){
 		var html = "";
 		html += '<div class="floatl"><div class="imgIn"><img src="'+$(this).val()+'" /></div><img src="img/bf02.png" />';
@@ -83,7 +83,7 @@ function showHome(){
 		$('.homep').hide().removeClass('animated fadeInDown');
 		$('.oldNew').hide().removeClass('animated rotateInDownLeft');
 		$('.look').hide().removeClass('animated rotateInUpRight');
-		showHome();
+		mycodes();
 	});
 	$('.look').on('click',function(){
 		$('#homepage').hide();

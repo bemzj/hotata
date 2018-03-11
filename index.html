@@ -64,7 +64,7 @@
 			</div>
 		</div>
 		<!--购买第一步-->
-		<div id="buyStep01">
+		<div id="buyStep01" style="display: none;">
 			<div class="rback">
 				<input type="image" src="img/return.png" />
 			</div>
@@ -110,7 +110,283 @@
 				</div>
 			</div>
 		</div>	
-		
+		<!--购买第二步-->
+		<div id="buyStep02" style="display: none;">
+			<div class="rback">
+				<input type="image" src="img/return.png" />
+			</div>
+			<div class="bt01">
+				<img src="img/bt01.png" />
+			</div>
+			<div class="bt02">
+				<img src="img/bt02.png" />
+				<input type="checkbox" id="checkbox"/>
+			</div>
+			<div class="bt03">
+				<input type="image" src="img/bt04.png" class="floatl btPrev"/>
+				<input type="image" src="img/bf04.png" class="floatr btNext"/>
+				<div class="clearBoth"></div>
+			</div>
+		</div>
+		<!--查看详情-->
+		<div id="lookCode" style="display: none;">
+			<div class="rback">
+				<input type="image" src="img/return.png" />
+			</div>
+			<div class="lc01">
+				<img src="img/lc01.png" />
+			</div>
+			<div class="lc02">
+				<p class="floatl">产品满意度：5分</p>
+				<p class="floatr">服务满意度：4分</p>
+				<div class="clearBoth"></div>
+			</div>
+			<div class="lc03">
+				<div class="inputBox">
+					<p>活动码编号：</p>
+					<input type="text" disabled="disabled" placeholder="" value="92374873"/>
+				</div>
+				<div class="inputBox">
+					<p>城市代码：</p>
+					<input type="text" disabled="disabled" placeholder="" value="92374873"/>
+				</div>
+				<div class="inputBox">
+					<p>产品型号：</p>
+					<input type="text" disabled="disabled" placeholder="" value="92374873"/>
+				</div>
+				<div class="inputBox">
+					<p>安装效果照片：</p>
+					<div class="imageBox">
+						<div class="floatl">
+							<img src="img/bf02.png" />
+							<!--放在第二个img数据-->
+							<img src="img/back.jpg" />
+						</div>
+						<div class="floatl">
+							<img src="img/bf02.png" />
+							<img src="img/back.jpg" />
+						</div>
+						<div class="floatl">
+							<img src="img/bf02.png" />
+							<img src="img/back.jpg" />
+						</div>
+						<div class="floatl">
+							<img src="img/bf02.png" />
+							<img src="img/back.jpg" />
+						</div>
+						<div class="floatl">
+							<img src="img/bf02.png" />
+							<img src="img/back.jpg" />
+						</div>
+						<div class="floatl">
+							<img src="img/bf02.png" />
+							<img src="img/back.jpg" />
+						</div>
+						<div class="clearl"></div>
+					</div>
+					
+				</div>
+				<div class="inputBox">
+					<p>意见反馈：</p>
+					<div class="diss">
+						<p>希望好太太越好越好希望好太太越好越好希望好太太越好越好希望好太太越好越好</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--评价-->
+		<div id="suggestion" style="display: none;">
+			<div class="rback">
+				<input type="image" src="img/return.png" />
+			</div>
+			<div class="sg01">
+				<img src="img/sg01.png" />
+			</div>
+			<div class="sg02">
+				<div class="inputBox">
+					<p>产品满意度：</p>
+					<div class="starBox">
+						<img src="img/sg02.png"  class="floatl"/>
+						<img src="img/sg02.png"  class="floatl"/>
+						<img src="img/sg02.png"  class="floatl"/>
+						<img src="img/sg02.png"  class="floatl"/>
+						<img src="img/sg02.png"  class="floatl"/>
+						<div class="clearl"></div>
+					</div>
+				</div>
+				<div class="inputBox">
+					<p>服务满意度：</p>
+					<div class="starBox">
+						<img src="img/sg02.png"  class="floatl"/>
+						<img src="img/sg02.png"  class="floatl"/>
+						<img src="img/sg02.png"  class="floatl"/>
+						<img src="img/sg02.png"  class="floatl"/>
+						<img src="img/sg02.png"  class="floatl"/>
+						<div class="clearl"></div>
+					</div>
+				</div>
+				<div class="inputBox">
+					<p>安装效果照片：</p>
+					<div class="imageBox">
+						<div class="floatl">
+							<img src="img/bf02.png" />
+							<!--放在第二个img数据-->
+							<img src="img/back.jpg" />
+						</div>
+						<div class="floatl sgup">
+							<img src="img/bf02.png" />
+							<input type="file" id="file" accept="image/*" capture="camera">
+						</div>
+						<div class="floatl">
+							<img src="img/bf02.png" />
+							<img src="img/back.jpg" />
+						</div>
+						<div class="floatl">
+							<img src="img/bf02.png" />
+							<img src="img/back.jpg" />
+						</div>
+						<div class="floatl">
+							<img src="img/bf02.png" />
+							<img src="img/back.jpg" />
+						</div>
+						<div class="floatl">
+							<img src="img/bf02.png" />
+							<img src="img/back.jpg" />
+						</div>
+						<div class="clearl"></div>
+					</div>
+					
+				</div>
+				<div class="inputBox">
+					<p>意见反馈：</p>
+					<div class="sgtext">
+						<textarea placeholder="您还可以输入200个字符"></textarea>
+					</div>
+				</div>
+				<div class="nextBtn">
+					<input type="image" src="img/sg04.png" />
+				</div>
+			</div>
+		</div>
+		<!--评价成功-->
+		<div id="suggestSuccess" style="display: none;">
+			<div class="ssBox">
+				<img src="img/sg06.png" />
+				<div class="star">
+					<img src="img/sg07.png" />
+				</div>
+				<button></button>
+			</div>
+		</div>
+		<!--使用第1步-->
+		<div id="use1" style="display: none;">
+			<div class="rback">
+				<input type="image" src="img/return.png" />
+			</div>
+			<div class="use101">
+				<img src="img/use01.png" />
+			</div>
+			<div class="use102">
+				<div class="inputBox">
+					<p>姓名</p>
+					<input type="text" disabled="disabled" placeholder="" value="92374873"/>
+				</div>
+				<div class="inputBox">
+					<p>联系电话</p>
+					<input type="text" disabled="disabled" placeholder="" value="92374873"/>
+				</div>
+				<div class="inputBox">
+					<p>旧款品牌</p>
+					<input type="text" disabled="disabled" placeholder="" value="92374873"/>
+				</div>
+				<div class="inputBox">
+					<p>旧款品牌</p>
+					<div class="imageBox">
+						<div class="floatl">
+							<img src="img/bf02.png" />
+							<!--放在第二个img数据-->
+							<img src="img/back.jpg" />
+						</div>
+						<div class="floatl">
+							<img src="img/bf02.png" />
+							<img src="img/back.jpg" />
+						</div>
+						<div class="floatl">
+							<img src="img/bf02.png" />
+							<img src="img/back.jpg" />
+						</div>
+						<div class="floatl">
+							<img src="img/bf02.png" />
+							<img src="img/back.jpg" />
+						</div>
+						<div class="floatl">
+							<img src="img/bf02.png" />
+							<img src="img/back.jpg" />
+						</div>
+						<div class="floatl">
+							<img src="img/bf02.png" />
+							<img src="img/back.jpg" />
+						</div>
+						<div class="clearl"></div>
+					</div>
+					
+				</div>	
+				<div class="nextBtn">
+					<input type="image" src="img/use02.png" />
+				</div>
+			</div>
+		</div>
+		<!--使用第2步-->
+		<div id="use2" style="display: none;">
+			<div class="use2">
+				<img src="img/use03.png" />
+				<div class="star">
+					<img src="img/use05.png" />
+				</div>
+				<button class="usYes"></button>
+				<button class="usNo"></button>
+			</div>
+		</div>
+		<!--使用第3步-->
+		<div id="use3" style="display: none;">
+			<div class="rback">
+				<input type="image" src="img/return.png" />
+			</div>
+			<div class="use3">
+				<div class="usTitle">
+					<img src="img/use06.png" />
+				</div>
+				<div class="twoUse">
+					<p>活动码编号：92837625</p>
+					<p>活动码类型：智能活动码</p>
+				</div>
+				<div class="inputBox">
+					<p>城市代码：</p>
+					<input type="text" placeholder="请输入您的手机号码"/>
+				</div>
+				<div class="inputBox">
+					<p>购买产品的型号：</p>
+					<input type="text" placeholder="请输入使用的旧款品牌"/>
+				</div>
+				<div class="useTip">
+					<p>温馨提示：城市代码请咨询门店工作人员后填写</p>
+				</div>
+				<div class="nextBtn">
+					<input type="image" src="img/use02.png" />
+				</div>
+			</div>
+			
+		</div>	
+		<!--使用第4步-->
+		<div id="use4">
+			<div class="use4">
+				<img src="img/use07.png" />
+				<div class="star">
+					<img src="img/use05.png" />
+				</div>
+				<button></button>
+			</div>
+		</div>
 		<script>
 		    //微信加入聊天
 			function audioAutoPlay(id,v){
@@ -131,6 +407,8 @@
 			audioAutoPlay('bg');
 	    </script>
 	    <script type="text/javascript" src="js/share-code-pop.js" ></script>
+	    <!--<script type="text/javascript" src="js/tools.min.js" ></script>-->
+	    <script type="text/javascript" src="js/upImg.js" ></script>
 		<script type="text/javascript" src="js/index.js" ></script>
 		<!--删除不良信息-->
 		<div class="delete2" hidden="hidden"></div>
