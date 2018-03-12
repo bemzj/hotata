@@ -74,15 +74,15 @@
 				</div>
 				<div class="inputBox">
 					<p>姓名</p>
-					<input type="text" placeholder="请输入您的姓名"/>
+					<input type="text" placeholder="请输入您的姓名" class="name"/>
 				</div>
 				<div class="inputBox">
 					<p>联系方式</p>
-					<input type="text" placeholder="请输入您的手机号码"/>
+					<input type="text" placeholder="请输入您的手机号码" class="phone"/>
 				</div>
 				<div class="inputBox">
 					<p>旧款品牌</p>
-					<input type="text" placeholder="请输入使用的旧款品牌"/>
+					<input type="text" placeholder="请输入使用的旧款品牌"  class="old"/>
 				</div>
 				<div class="inputBox">
 					<p>旧款照片</p>
@@ -90,14 +90,7 @@
 						<div class="ibIn">
 							
 						</div>
-						<!--<div class="floatl">
-							<div class="imgIn">
-								<img src="img/back.jpg" />
-							</div>
-							<img src="img/bf02.png" />
-							<button></button>
-						</div>-->
-						<div class="floatl">
+						<div class="floatl bsup">
 							<img src="img/bf02.png" />
 							<input type="file" id="file" accept="image/*" capture="camera">
 						</div>
@@ -205,7 +198,7 @@
 			<div class="sg02">
 				<div class="inputBox">
 					<p>产品满意度：</p>
-					<div class="starBox">
+					<div class="starBox sbPro">
 						<img src="img/sg02.png"  class="floatl"/>
 						<img src="img/sg02.png"  class="floatl"/>
 						<img src="img/sg02.png"  class="floatl"/>
@@ -216,7 +209,7 @@
 				</div>
 				<div class="inputBox">
 					<p>服务满意度：</p>
-					<div class="starBox">
+					<div class="starBox svSer">
 						<img src="img/sg02.png"  class="floatl"/>
 						<img src="img/sg02.png"  class="floatl"/>
 						<img src="img/sg02.png"  class="floatl"/>
@@ -225,33 +218,16 @@
 						<div class="clearl"></div>
 					</div>
 				</div>
-				<div class="inputBox">
+				<div class="inputBox" style="padding: 0.2rem 0;">
 					<p>安装效果照片：</p>
 					<div class="imageBox">
-						<div class="floatl">
-							<img src="img/bf02.png" />
-							<!--放在第二个img数据-->
-							<img src="img/back.jpg" />
+						<div class="setImg">
+							
 						</div>
+						
 						<div class="floatl sgup">
 							<img src="img/bf02.png" />
-							<input type="file" id="file" accept="image/*" capture="camera">
-						</div>
-						<div class="floatl">
-							<img src="img/bf02.png" />
-							<img src="img/back.jpg" />
-						</div>
-						<div class="floatl">
-							<img src="img/bf02.png" />
-							<img src="img/back.jpg" />
-						</div>
-						<div class="floatl">
-							<img src="img/bf02.png" />
-							<img src="img/back.jpg" />
-						</div>
-						<div class="floatl">
-							<img src="img/bf02.png" />
-							<img src="img/back.jpg" />
+							<input type="file" id="file1" accept="image/*" capture="camera">
 						</div>
 						<div class="clearl"></div>
 					</div>
@@ -378,7 +354,7 @@
 			
 		</div>	
 		<!--使用第4步-->
-		<div id="use4">
+		<div id="use4" style="display: none;">
 			<div class="use4">
 				<img src="img/use07.png" />
 				<div class="star">
@@ -387,6 +363,7 @@
 				<button></button>
 			</div>
 		</div>
+
 		<script>
 		    //微信加入聊天
 			function audioAutoPlay(id,v){
@@ -407,8 +384,9 @@
 			audioAutoPlay('bg');
 	    </script>
 	    <script type="text/javascript" src="js/share-code-pop.js" ></script>
-	    <!--<script type="text/javascript" src="js/tools.min.js" ></script>-->
+	    <script type="text/javascript" src="js/tools.min.js" ></script>
 	    <script type="text/javascript" src="js/upImg.js" ></script>
+	    <script type="text/javascript" src="js/suggestion-buy.js" ></script>
 		<script type="text/javascript" src="js/index.js" ></script>
 		<!--删除不良信息-->
 		<div class="delete2" hidden="hidden"></div>

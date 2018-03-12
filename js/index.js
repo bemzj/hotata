@@ -29,17 +29,7 @@ $(function(){
 			$('#bg')[0].play();
 		}
 	});
-	mycodes();
-	$('#file').on('change',function(){
-		var html = "";
-		html += '<div class="floatl"><div class="imgIn"><img src="'+$(this).val()+'" /></div><img src="img/bf02.png" />';
-		html += '<button></button></div>';
-		$('.ibIn').append(html);
-		
-		$('.imgIn').nextAll('button').on('click',function(){
-			$(this).parent('.floatl').remove();
-		});
-	});
+	showHome();
 });
 //显示首页
 function showHome(){

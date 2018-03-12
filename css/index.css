@@ -512,11 +512,12 @@ body {
       color: #f1e36f;
       opacity: 0.8; }
     #buyStep01 .buystep01 .inputBox .imageBox {
-      margin-top: 0.1rem; }
+      margin-top: -0.1rem; }
       #buyStep01 .buystep01 .inputBox .imageBox .floatl {
         width: 22%;
         margin-right: 4%;
-        position: relative; }
+        position: relative;
+        margin-top: 0.25rem; }
         #buyStep01 .buystep01 .inputBox .imageBox .floatl > img {
           width: 100%; }
         #buyStep01 .buystep01 .inputBox .imageBox .floatl input {
@@ -531,21 +532,36 @@ body {
           top: 0;
           left: 0;
           width: 100%;
+          z-index: 4;
           height: 100%;
           overflow: hidden;
-          border-radius: 4px; }
+          border-radius: 4px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-direction: column;
+          display: -webkit-flex;
+          -webkit-align-items: center;
+          -webkit-justify-content: center;
+          -webkit-flex-direction: column; }
           #buyStep01 .buystep01 .inputBox .imageBox .floatl .imgIn img {
             width: 100%; }
+        #buyStep01 .buystep01 .inputBox .imageBox .floatl .imgIn + img {
+          opacity: 0; }
         #buyStep01 .buystep01 .inputBox .imageBox .floatl button {
           position: absolute;
           top: -0.2rem;
           right: -0.2rem;
           width: 0.4rem;
           height: 0.4rem;
+          z-index: 6;
           background: url(../img/bf03.png) no-repeat left top;
           background-size: 100% 100%; }
-      #buyStep01 .buystep01 .inputBox .imageBox .floatl:nth-last-child(2) {
+      #buyStep01 .buystep01 .inputBox .imageBox .bsup {
         margin-right: 0%; }
+
+#buyStep01 .buystep01 .inputBox .imageBox .floatl:nth-child(4n) {
+  margin-right: 0%; }
 
 #buyStep02 {
   position: fixed;
@@ -786,22 +802,24 @@ body {
           opacity: 0.8; }
       #suggestion .sg02 .inputBox .imageBox {
         margin-left: 33.33%;
-        padding: 0.25rem 0 0.05rem; }
+        padding: 0.2rem 0 0; }
         #suggestion .sg02 .inputBox .imageBox .floatl {
-          width: 30%;
-          margin-left: 1%;
+          width: 26%;
+          margin-right: 5%;
           position: relative;
-          margin-bottom: 0.2rem;
-          border-radius: 4px;
-          overflow: hidden; }
-          #suggestion .sg02 .inputBox .imageBox .floatl > img {
+          margin-bottom: 0.2rem; }
+          #suggestion .sg02 .inputBox .imageBox .floatl img {
             width: 100%; }
           #suggestion .sg02 .inputBox .imageBox .floatl > img:nth-child(1) {
             opacity: 0; }
-          #suggestion .sg02 .inputBox .imageBox .floatl > img:nth-child(2) {
+          #suggestion .sg02 .inputBox .imageBox .floatl .setIn {
             position: absolute;
             top: 0;
-            left: 0; }
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border-radius: 4px;
+            overflow: hidden; }
           #suggestion .sg02 .inputBox .imageBox .floatl input {
             position: absolute;
             top: 0;
@@ -809,8 +827,21 @@ body {
             width: 100%;
             height: 100%;
             opacity: 0; }
-        #suggestion .sg02 .inputBox .imageBox .sgup > img:nth-child(1) {
-          opacity: 1; }
+          #suggestion .sg02 .inputBox .imageBox .floatl button {
+            position: absolute;
+            top: -0.2rem;
+            right: -0.2rem;
+            width: 0.4rem;
+            height: 0.4rem;
+            z-index: 6;
+            background: url(../img/bf03.png) no-repeat left top;
+            background-size: 100% 100%; }
+        #suggestion .sg02 .inputBox .imageBox .floatl:nth-child(3) {
+          margin-right: 0%; }
+        #suggestion .sg02 .inputBox .imageBox .sgup {
+          margin-right: 0; }
+          #suggestion .sg02 .inputBox .imageBox .sgup > img:nth-child(1) {
+            opacity: 1; }
         #suggestion .sg02 .inputBox .imageBox .floatl:nth-child(3n+2) {
           margin-left: 2%; }
         #suggestion .sg02 .inputBox .imageBox .floatl:nth-child(3n) {
@@ -963,8 +994,7 @@ body {
   width: 100%;
   height: 100%;
   z-index: 10;
-  background: url(../img/back.jpg) no-repeat left top;
-  background-size: 100% 100%;
+  background-color: rgba(0, 0, 0, 0.5);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1115,5 +1145,43 @@ body {
       display: block;
       bottom: 3.5%;
       opacity: 0; }
+
+#popLoading {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 11;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  display: -webkit-flex;
+  -webkit-align-items: center;
+  -webkit-justify-content: center;
+  -webkit-flex-direction: column;
+  background-color: rgba(0, 0, 0, 0.5); }
+  #popLoading > img {
+    width: 10%; }
+
+#imgBig {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 11;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  display: -webkit-flex;
+  -webkit-align-items: center;
+  -webkit-justify-content: center;
+  -webkit-flex-direction: column;
+  background-color: rgba(0, 0, 0, 0.5); }
+  #imgBig > img {
+    width: 100%; }
 
 /*# sourceMappingURL=index.css.map */

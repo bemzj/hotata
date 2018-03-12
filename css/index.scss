@@ -509,11 +509,13 @@ body{
             }
             
             .imageBox{
-                margin-top: 0.1rem;
+                margin-top: -0.1rem;
                 .floatl{
                     width: 22%;
                     margin-right: 4%;
                     position: relative;
+                    margin-top: 0.25rem;
+                    
                     >img{
                         width: 100%;
                     }
@@ -530,12 +532,24 @@ body{
                         top: 0;
                         left: 0;
                         width: 100%;
+                        z-index: 4;
                         height: 100%;
                         overflow: hidden;
                         border-radius: 4px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        flex-direction: column;
+                        display: -webkit-flex;
+                        -webkit-align-items: center;
+                        -webkit-justify-content: center;
+                        -webkit-flex-direction: column;
                         img{
                             width: 100%;
                         }
+                    }
+                    .imgIn+img{
+                        opacity: 0;
                     }
                     button{
                         position: absolute;
@@ -543,16 +557,20 @@ body{
                         right: -0.2rem;
                         width: 0.4rem;
                         height: 0.4rem;
+                        z-index: 6;
                         background: url(../img/bf03.png) no-repeat left top;
                         background-size: 100% 100%;
                     }
                 }
-                .floatl:nth-last-child(2){
+                .bsup{
                     margin-right: 0%;
                 }
             }
         }
     }
+}
+#buyStep01 .buystep01 .inputBox .imageBox .floatl:nth-child(4n){
+    margin-right: 0%;
 }
 #buyStep02{
     position: fixed;
@@ -841,25 +859,26 @@ body{
             }
             .imageBox{
                 margin-left: 33.33%;
-                padding: 0.25rem 0 0.05rem;
+                padding: 0.2rem 0 0;
                 .floatl{
-                    width: 30%;
-                    margin-left: 1%;
+                    width: 26%;
+                    margin-right: 5%;
                     position: relative;
                     margin-bottom: 0.2rem;
-                    border-radius: 4px;
-                    overflow: hidden;
-                    
-                    >img{
+                    img{
                         width: 100%;
                     }
                     >img:nth-child(1){
                         opacity: 0;
                     }
-                    >img:nth-child(2){
+                    .setIn{
                         position: absolute;
                         top: 0;
                         left: 0;
+                        width: 100%;
+                        height: 100%;
+                        border-radius: 4px;
+                        overflow: hidden;
                     }
                     input{
                         position: absolute;
@@ -869,8 +888,22 @@ body{
                         height: 100%;
                         opacity: 0;
                     }
+                    button{
+                        position: absolute;
+                        top: -0.2rem;
+                        right: -0.2rem;
+                        width: 0.4rem;
+                        height: 0.4rem;
+                        z-index: 6;
+                        background: url(../img/bf03.png) no-repeat left top;
+                        background-size: 100% 100%;
+                    }
+                }
+                .floatl:nth-child(3){
+                    margin-right: 0%;
                 }
                 .sgup{
+                    margin-right: 0;
                    >img:nth-child(1){
                         opacity: 1;
                     } 
@@ -1062,8 +1095,7 @@ body{
     width: 100%;
     height: 100%;
     z-index: 10;
-    background: url(../img/back.jpg) no-repeat left top;
-    background-size: 100% 100%;
+    background-color: rgba(0,0,0,0.5);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1240,5 +1272,45 @@ body{
             bottom: 3.5%;
             opacity: 0;
         }
+    }
+}
+#popLoading{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 11;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    display: -webkit-flex;
+    -webkit-align-items: center;
+    -webkit-justify-content: center;
+    -webkit-flex-direction: column;
+    background-color: rgba(0,0,0,0.5);
+    >img{
+        width: 10%;
+    }
+}
+#imgBig{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 11;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    display: -webkit-flex;
+    -webkit-align-items: center;
+    -webkit-justify-content: center;
+    -webkit-flex-direction: column;
+    background-color: rgba(0,0,0,0.5);
+    >img{
+        width: 100%;
     }
 }
