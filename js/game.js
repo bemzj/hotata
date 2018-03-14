@@ -100,8 +100,6 @@ $(function(){
     $('#gcity').focus(function(){
     	$(this).blur();
     });
-    
-
 });
 
 //游戏提示
@@ -146,3 +144,33 @@ function gameOver(fun){
 		}
 	});
 }
+//邀请好友
+function cOver(){
+	$('#changeOver').remove();
+	var html = "";
+	html += '<div id="changeOver"><div class="changeOver"><img src="img/game01.png" />';
+	html += '<button class="invite"></button>';
+	html += '<button class="cancel"></button></div></div>';
+	$('body').append(html);
+	$('#changeOver .cancel').on('click',function(event){
+		$('#changeOver').remove();
+	});
+	$('#changeOver .invite').on('click',function(event){
+		$('#changeOver').remove();
+		sharing2();
+	});
+}
+//闯关成功
+function shareSuccess(fun){
+	$('#shareSuccess').remove();
+	var html = '<div id="shareSuccess"><div class="shareSuccess"><img src="img/game03.png" /><button></button></div></div>';
+	$('body').append(html);
+	$('#shareSuccess button').on('click',function(event){
+		$('#shareSuccess').remove();
+		if((typeof fun)=='function')
+		{
+			fun();
+		}
+	});
+}
+
