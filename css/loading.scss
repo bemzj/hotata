@@ -1,0 +1,209 @@
+#reload{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    background: url(../img/loadBkg.jpg) no-repeat;
+    background-size: 100% 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    display: -webkit-flex;
+    -webkit-align-items: center;
+    -webkit-justify-content: center;
+    -webkit-flex-direction: column;
+    ul{
+        width: 100%;
+        li:nth-child(2){
+            display: block;
+            width: 44.53%;
+            margin: 0 auto;
+            position: relative;
+            height: 0.14rem;
+            
+            margin-top: 0.2rem;
+            margin-left: 27.73%;
+            .upOut{
+               overflow: hidden;
+               height: 100%;
+               width: 100%; 
+               border-radius: 0.2rem;
+               position: relative;
+               background-color: #b1301f;
+            }
+            .up{
+                background-color: #ffecb4;
+                height: 100%;
+                width: 0%;  
+                border-radius: 0.2rem;
+            }
+            p{
+                position: absolute;
+                left: 105%;
+                top: -0.09rem;
+                font-size: 0.2rem;
+                color: #ffecb4;
+            }
+        }
+        li:nth-child(1) .logoBox{
+            width: 35.87%;
+            margin: 0 auto;
+            position: relative;
+            img{
+                width: 100%;
+            }
+            
+        }
+    } 
+}
+.load01 {
+    width: 0.2rem;
+    position: absolute;
+    right: 0;
+    bottom: 180%;
+    animation: aniLoad01 1s linear infinite;
+    -moz-animation: aniLoad01 1s linear infinite;
+    -webkit-animation: aniLoad01 1s linear infinite;
+    -ms-animation: aniLoad01 1s linear infinite;
+}
+
+.loadAll {
+    width: 0.25rem;
+    position: absolute;
+    right: 110%;
+    top: -10%;
+    opacity: 0;
+    animation: aniLoad02 1s linear infinite;
+    -moz-animation: aniLoad02 1s linear infinite;
+    -webkit-animation: aniLoad02 1s linear infinite;
+    -ms-animation: aniLoad02 1s linear infinite;
+    >div {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 0%;
+        height: 0%;
+        overflow: hidden;
+        background-color: rgba(201, 87, 56, 1);
+        animation: aniLoad03 1s linear infinite;
+        -moz-animation: aniLoad03 1s linear infinite;
+        -webkit-animation: aniLoad03 1s linear infinite;
+        -ms-animation: aniLoad03 1s linear infinite;
+    }
+}
+
+.loadAll2 {
+    right: -30%;
+    top: -6%;
+    width: 0.22rem;
+    animation-delay: 0.57s;
+    -moz-animation-delay: 0.57s;
+    -webkit-animation-delay: 0.57s;
+    -ms-animation-delay: 0.57s;
+    >div {
+        animation-delay: 0.57s;
+        -moz-animation-delay: 0.57s;
+        -webkit-animation-delay: 0.57s;
+        -ms-animation-delay: 0.57s;
+    }
+}
+
+.loadAll3 {
+    top: 25%;
+    right: 120%;
+    animation-delay: 0.37s;
+    -moz-animation-delay: 0.37s;
+    -webkit-animation-delay: 0.37s;
+    -ms-animation-delay: 0.37s;
+    >div {
+        animation-delay: 0.37s;
+        -moz-animation-delay: 0.37s;
+        -webkit-animation-delay: 0.37s;
+        -ms-animation-delay: 0.37s;
+    }
+}
+
+.loadAll4 {
+    top: 22%;
+    right: -18%;
+    width: 0.22rem;
+    animation-delay: 0.22s;
+    -moz-animation-delay: 0.22s;
+    -webkit-animation-delay: 0.22s;
+    -ms-animation-delay: 0.22s;
+    >div {
+        animation-delay: 0.22s;
+        -moz-animation-delay: 0.22s;
+        -webkit-animation-delay: 0.22s;
+        -ms-animation-delay: 0.22s;
+    }
+}
+@keyframes aniLoad01
+{
+    from {transform: rotate(0deg);}
+    to {transform: rotate(360deg);}
+}
+
+@-moz-keyframes aniLoad01
+{
+    from {transform: rotate(0deg);}
+    to {transform: rotate(360deg);}
+}
+
+@-webkit-keyframes aniLoad01 
+{
+    from {transform: rotate(0deg);}
+    to {transform: rotate(360deg);}
+}
+@-ms-keyframes aniLoad01
+{
+    from {transform: rotate(0deg);}
+    to {transform: rotate(360deg);}
+}
+@keyframes aniLoad02
+{
+    from {opacity: 1;}
+    to {opacity: 0;}
+}
+
+@-moz-keyframes aniLoad02
+{
+    from {opacity: 1;}
+    to {opacity: 0;}
+}
+
+@-webkit-keyframes aniLoad02 
+{
+    from {opacity: 1;}
+    to {opacity: 0;}
+}
+@-ms-keyframes aniLoad02
+{
+    from {opacity: 1;}
+    to {opacity: 0;}
+}
+@keyframes aniLoad03
+{
+    from {top:50%;left: 50%;width: 0%;height: 0%;}
+    to {top:0%;left: 0%;width: 100%;height: 100%;}
+}
+
+@-moz-keyframes aniLoad03
+{
+    from {top:50%;left: 50%;width: 0%;height: 0%;}
+    to {top:0%;left: 0%;width: 100%;height: 100%;}
+}
+
+@-webkit-keyframes aniLoad03 
+{
+    from {top:50%;left: 50%;width: 0%;height: 0%;}
+    to {top:0%;left: 0%;width: 100%;height: 100%;}
+}
+@-ms-keyframes aniLoad03
+{
+    from {top:50%;left: 50%;width: 0%;height: 0%;}
+    to {top:0%;left: 0%;width: 100%;height: 100%;}
+}

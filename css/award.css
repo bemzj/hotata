@@ -22,10 +22,10 @@
     #award .awardBox > img {
       width: 100%; }
     #award .awardBox .awardGift {
-      width: 88.07%;
+      width: 86%;
       position: absolute;
-      top: 5.7%;
-      left: 6.2%; }
+      top: 6.65%;
+      left: 7.12%; }
       #award .awardBox .awardGift > img {
         width: 100%; }
     #award .awardBox .start {
@@ -35,5 +35,189 @@
       left: 38.2%; }
       #award .awardBox .start > img {
         width: 100%; }
+
+.awardTitle {
+  width: 63.07%;
+  margin-bottom: 0.4rem;
+  position: relative; }
+  .awardTitle > div {
+    position: absolute;
+    top: -8%;
+    left: 32.5%;
+    width: 12%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    display: -webkit-flex;
+    -webkit-align-items: center;
+    -webkit-justify-content: center;
+    -webkit-flex-direction: column; }
+  .awardTitle p {
+    font-size: 0.36rem;
+    color: #f6d67c;
+    font-weight: bold; }
+  .awardTitle > img {
+    width: 100%; }
+
+.awardBtn {
+  width: 42.13%;
+  margin-top: 0.6rem; }
+  .awardBtn a {
+    display: block; }
+    .awardBtn a > img {
+      width: 100%; }
+
+.rback {
+  position: absolute;
+  width: 19.2%;
+  left: 3.8%;
+  top: 1.5%; }
+  .rback > input {
+    display: block;
+    border: 0;
+    width: 100%; }
+
+#gpop {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 11;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  display: -webkit-flex;
+  -webkit-align-items: center;
+  -webkit-justify-content: center;
+  -webkit-flex-direction: column;
+  background-color: rgba(0, 0, 0, 0.7); }
+  #gpop .gpopBox {
+    width: 80%;
+    position: relative; }
+    #gpop .gpopBox > img {
+      width: 100%; }
+    #gpop .gpopBox button {
+      position: absolute;
+      top: 82%;
+      left: 30%;
+      width: 40%;
+      height: 12%;
+      opacity: 0; }
+    #gpop .gpopBox .wx1, #gpop .gpopBox .jf {
+      position: absolute;
+      top: 13%;
+      left: 0;
+      width: 100%;
+      font-size: 0.32rem;
+      text-align: center;
+      color: #f5d58b; }
+    #gpop .gpopBox .wx2 {
+      position: absolute;
+      top: 28%;
+      left: 0;
+      width: 100%;
+      font-size: 0.7rem;
+      text-align: center;
+      color: #d92501; }
+
+.newPop {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  display: -webkit-flex;
+  -webkit-align-items: center;
+  -webkit-justify-content: center;
+  background-color: rgba(0, 0, 0, 0.7); }
+
+.newPop3 {
+  width: 80%;
+  position: relative; }
+  .newPop3 > img {
+    width: 100%; }
+  .newPop3 input {
+    position: absolute;
+    top: 12.62%;
+    left: 26%;
+    height: 6.6%;
+    width: 62%;
+    border: 0;
+    font-size: 0.26rem;
+    background-color: transparent;
+    color: #f0e26f;
+    opacity: 0.8; }
+  .newPop3 textarea {
+    position: absolute;
+    top: 44%;
+    left: 37%;
+    height: 12%;
+    width: 52%;
+    border: 0;
+    font-size: 0.26rem;
+    color: #f0e26f;
+    resize: none;
+    background-color: transparent; }
+  .newPop3 input:nth-child(2) {
+    top: 22.45%; }
+  .newPop3 input:nth-child(3) {
+    top: 32.48%;
+    left: 31%; }
+  .newPop3 textarea::-moz-placeholder {
+    color: #f0e26f;
+    opacity: 0.8; }
+  .newPop3 textarea::-webkit-input-placeholder {
+    color: #f0e26f;
+    opacity: 0.8; }
+  .newPop3 textarea::-ms-input-placeholder {
+    color: #f0e26f;
+    opacity: 0.8; }
+  .newPop3 textarea:nth-child(5) {
+    left: 26%;
+    top: 60.4%;
+    width: 64%;
+    height: 13%; }
+  .newPop3 input::-moz-placeholder {
+    color: #f0e26f;
+    opacity: 0.8; }
+  .newPop3 input::-webkit-input-placeholder {
+    color: #f0e26f;
+    opacity: 0.8; }
+  .newPop3 input::-ms-input-placeholder {
+    color: #f0e26f;
+    opacity: 0.8; }
+  .newPop3 button {
+    position: absolute;
+    top: 86%;
+    left: 7%;
+    width: 41%;
+    height: 9%;
+    opacity: 0; }
+  .newPop3 .np3No {
+    left: 52%; }
+
+.newPop2 {
+  width: 80%;
+  position: relative; }
+  .newPop2 > img {
+    width: 100%; }
+  .newPop2 button {
+    position: absolute;
+    top: 82%;
+    left: 7%;
+    width: 41%;
+    height: 11%;
+    opacity: 0; }
+  .newPop2 .npNo {
+    left: 52%; }
 
 /*# sourceMappingURL=award.css.map */

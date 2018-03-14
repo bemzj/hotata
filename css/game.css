@@ -1,0 +1,499 @@
+#myGift {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  display: -webkit-flex;
+  -webkit-align-items: center;
+  -webkit-justify-content: center;
+  background: url(../img/mg03.jpg) no-repeat;
+  background-size: 100% 100%; }
+  #myGift .jifen {
+    position: absolute;
+    width: 28.4%;
+    right: 3.8%;
+    top: 1.5%; }
+    #myGift .jifen > div {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      display: -webkit-flex;
+      -webkit-align-items: center;
+      -webkit-justify-content: center;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%; }
+      #myGift .jifen > div p {
+        width: 60%;
+        font-size: 0.3rem;
+        color: #f6d67d;
+        margin-left: 22%;
+        text-align: center; }
+    #myGift .jifen > img {
+      width: 100%; }
+  #myGift .mg01 {
+    width: 42.4%;
+    position: absolute;
+    left: 28.8%;
+    top: 11.6%; }
+    #myGift .mg01 > img {
+      width: 100%; }
+  #myGift .mg02 {
+    width: 85%;
+    position: absolute;
+    left: 7.5%;
+    top: 26.1%;
+    border-radius: 5px;
+    border: 1px solid #f8db82;
+    height: 0.7rem;
+    overflow: hidden; }
+    #myGift .mg02 button {
+      display: block;
+      width: 50%;
+      height: 100%;
+      background-color: #ab3e28;
+      color: #f8db82;
+      font-size: 0.32rem;
+      font-weight: bold; }
+    #myGift .mg02 .btnhas {
+      background-color: #f8db82;
+      color: #ab3e28; }
+  #myGift .mg03 {
+    position: absolute;
+    left: 0;
+    top: 19.49%;
+    width: 100%; }
+    #myGift .mg03 p {
+      width: 100%;
+      text-align: center;
+      font-size: 0.24rem;
+      color: #f8db81;
+      text-indent: 0.1rem; }
+  #myGift .noGift {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    display: -webkit-flex;
+    -webkit-align-items: center;
+    -webkit-justify-content: center; }
+    #myGift .noGift > img {
+      width: 60%; }
+    #myGift .noGift p {
+      font-size: 0.32rem;
+      color: #f8db82;
+      line-height: 0.5rem; }
+  #myGift .shopBox {
+    width: 85%;
+    position: absolute;
+    left: 7.5%;
+    top: 35.4%;
+    height: 54%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    -webkit-overflow-scrolling: touch; }
+    #myGift .shopBox .shopChild {
+      width: 100%;
+      position: relative;
+      margin-left: 1px;
+      margin-bottom: 0.1rem; }
+      #myGift .shopBox .shopChild > img {
+        width: 100%; }
+    #myGift .shopBox .shopImg {
+      position: absolute;
+      top: 5.7%;
+      left: 3%;
+      width: 34.8%;
+      height: 87%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      display: -webkit-flex;
+      -webkit-align-items: center;
+      -webkit-justify-content: center; }
+      #myGift .shopBox .shopImg > img {
+        max-width: 90%;
+        max-height: 90%; }
+    #myGift .shopBox .stenBox {
+      position: absolute;
+      top: 5.7%;
+      left: 43%;
+      width: 40%;
+      height: 87%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      display: -webkit-flex;
+      -webkit-align-items: center;
+      -webkit-justify-content: center; }
+      #myGift .shopBox .stenBox p {
+        width: 100%;
+        color: #c72d27;
+        font-size: 0.22rem; }
+      #myGift .shopBox .stenBox p:nth-child(1) {
+        font-size: 0.28rem;
+        font-weight: bold;
+        line-height: 0.5rem; }
+    #myGift .shopBox button {
+      position: absolute;
+      top: 5.7%;
+      right: 0%;
+      width: 16%;
+      height: 87%;
+      display: block;
+      opacity: 0; }
+  #myGift .giftBox {
+    width: 85%;
+    position: absolute;
+    left: 7.5%;
+    top: 35.4%;
+    height: 54%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    -webkit-overflow-scrolling: touch; }
+    #myGift .giftBox .giftChild {
+      width: 104%;
+      position: relative;
+      margin-left: -2%; }
+      #myGift .giftBox .giftChild > img {
+        width: 100%; }
+    #myGift .giftBox .imgBox {
+      position: absolute;
+      top: 5.5%;
+      left: 3.2%;
+      width: 25.64%;
+      height: 75%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      display: -webkit-flex;
+      -webkit-align-items: center;
+      -webkit-justify-content: center; }
+      #myGift .giftBox .imgBox > img {
+        max-width: 90%;
+        max-height: 90%; }
+    #myGift .giftBox .ctenBox {
+      position: absolute;
+      top: 5.5%;
+      left: 33.5%;
+      width: 40%;
+      height: 75%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      display: -webkit-flex;
+      -webkit-align-items: center;
+      -webkit-justify-content: center; }
+      #myGift .giftBox .ctenBox p {
+        width: 100%;
+        color: #c72d27; }
+      #myGift .giftBox .ctenBox p:nth-child(1) {
+        font-size: 0.28rem; }
+      #myGift .giftBox .ctenBox p:nth-child(2) {
+        font-size: 0.18rem; }
+    #myGift .giftBox button {
+      position: absolute;
+      top: 5.5%;
+      right: 2%;
+      width: 22%;
+      height: 75%;
+      display: block;
+      opacity: 0; }
+
+.rback {
+  position: absolute;
+  width: 19.2%;
+  left: 3.8%;
+  top: 1.5%; }
+  .rback > input {
+    display: block;
+    border: 0;
+    width: 100%; }
+
+#myGift .shopBox .hasShop .stenBox p {
+  color: #948b6d; }
+
+.newPop {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  display: -webkit-flex;
+  -webkit-align-items: center;
+  -webkit-justify-content: center;
+  background-color: rgba(0, 0, 0, 0.7); }
+
+.newPop7 {
+  width: 80%;
+  position: relative; }
+  .newPop7 > img {
+    width: 100%; }
+  .newPop7 .np7Box {
+    position: absolute;
+    width: 100%;
+    height: 67%;
+    left: 0;
+    top: 14%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    display: -webkit-flex;
+    -webkit-align-items: center;
+    -webkit-justify-content: center; }
+    .newPop7 .np7Box > img {
+      max-width: 50%;
+      max-height: 70%; }
+    .newPop7 .np7Box p {
+      text-align: center;
+      font-size: 0.26rem;
+      color: #f0e26f; }
+  .newPop7 button {
+    position: absolute;
+    top: 82%;
+    left: 30%;
+    width: 40%;
+    height: 12%;
+    opacity: 0; }
+
+.newPop6 {
+  width: 80%;
+  position: relative; }
+  .newPop6 > img {
+    width: 100%; }
+  .newPop6 button {
+    position: absolute;
+    top: 82%;
+    left: 30%;
+    width: 40%;
+    height: 12%;
+    opacity: 0; }
+  .newPop6 .npNo {
+    left: 52%; }
+
+.newPop5 {
+  width: 80%;
+  position: relative; }
+  .newPop5 > img {
+    width: 100%; }
+  .newPop5 button {
+    position: absolute;
+    top: 82%;
+    left: 8%;
+    width: 40%;
+    height: 12%;
+    opacity: 0; }
+  .newPop5 .np5No {
+    left: 52%; }
+
+.newPop4 {
+  width: 80%;
+  position: relative; }
+  .newPop4 > img {
+    width: 100%; }
+  .newPop4 input {
+    position: absolute;
+    top: 13.8%;
+    left: 26%;
+    height: 6.6%;
+    width: 62%;
+    border: 0;
+    font-size: 0.26rem;
+    background-color: transparent;
+    color: #f0e26f;
+    opacity: 0.8; }
+  .newPop4 textarea {
+    position: absolute;
+    top: 47.5%;
+    left: 37%;
+    height: 12%;
+    width: 52%;
+    border: 0;
+    font-size: 0.26rem;
+    color: #f0e26f;
+    resize: none;
+    background-color: transparent; }
+  .newPop4 input:nth-child(2) {
+    top: 24.6%; }
+  .newPop4 input:nth-child(3) {
+    top: 35.4%;
+    left: 31%; }
+  .newPop4 textarea::-moz-placeholder {
+    color: #f0e26f;
+    opacity: 0.8; }
+  .newPop4 textarea::-webkit-input-placeholder {
+    color: #f0e26f;
+    opacity: 0.8; }
+  .newPop4 textarea::-ms-input-placeholder {
+    color: #f0e26f;
+    opacity: 0.8; }
+  .newPop4 textarea:nth-child(5) {
+    left: 26%;
+    top: 65.3%;
+    width: 64%;
+    height: 13%; }
+  .newPop4 input::-moz-placeholder {
+    color: #f0e26f;
+    opacity: 0.8; }
+  .newPop4 input::-webkit-input-placeholder {
+    color: #f0e26f;
+    opacity: 0.8; }
+  .newPop4 input::-ms-input-placeholder {
+    color: #f0e26f;
+    opacity: 0.8; }
+  .newPop4 button {
+    position: absolute;
+    top: 84.5%;
+    left: 7%;
+    width: 41%;
+    height: 9%;
+    opacity: 0; }
+  .newPop4 .np4No {
+    left: 52%; }
+
+.newPop3 {
+  width: 80%;
+  position: relative; }
+  .newPop3 > img {
+    width: 100%; }
+  .newPop3 input {
+    position: absolute;
+    top: 12.62%;
+    left: 26%;
+    height: 6.6%;
+    width: 62%;
+    border: 0;
+    font-size: 0.26rem;
+    background-color: transparent;
+    color: #f0e26f;
+    opacity: 0.8; }
+  .newPop3 textarea {
+    position: absolute;
+    top: 44%;
+    left: 37%;
+    height: 12%;
+    width: 52%;
+    border: 0;
+    font-size: 0.26rem;
+    color: #f0e26f;
+    resize: none;
+    background-color: transparent; }
+  .newPop3 input:nth-child(2) {
+    top: 22.45%; }
+  .newPop3 input:nth-child(3) {
+    top: 32.48%;
+    left: 31%; }
+  .newPop3 textarea::-moz-placeholder {
+    color: #f0e26f;
+    opacity: 0.8; }
+  .newPop3 textarea::-webkit-input-placeholder {
+    color: #f0e26f;
+    opacity: 0.8; }
+  .newPop3 textarea::-ms-input-placeholder {
+    color: #f0e26f;
+    opacity: 0.8; }
+  .newPop3 textarea:nth-child(5) {
+    left: 26%;
+    top: 60.5%;
+    width: 64%;
+    height: 13%; }
+  .newPop3 input::-moz-placeholder {
+    color: #f0e26f;
+    opacity: 0.8; }
+  .newPop3 input::-webkit-input-placeholder {
+    color: #f0e26f;
+    opacity: 0.8; }
+  .newPop3 input::-ms-input-placeholder {
+    color: #f0e26f;
+    opacity: 0.8; }
+  .newPop3 button {
+    position: absolute;
+    top: 86%;
+    left: 7%;
+    width: 41%;
+    height: 9%;
+    opacity: 0; }
+  .newPop3 .np3No {
+    left: 52%; }
+
+.newPop2 {
+  width: 80%;
+  position: relative; }
+  .newPop2 > img {
+    width: 100%; }
+  .newPop2 button {
+    position: absolute;
+    top: 82%;
+    left: 7%;
+    width: 41%;
+    height: 11%;
+    opacity: 0; }
+  .newPop2 .npNo {
+    left: 52%; }
+
+.newPop1 {
+  width: 80%;
+  position: relative; }
+  .newPop1 > p {
+    font-size: 0.24rem;
+    color: #ecd68b;
+    position: absolute;
+    top: 26%;
+    left: 26%; }
+  .newPop1 > p:nth-child(1) {
+    top: 15.2%; }
+  .newPop1 > p:nth-child(2) {
+    top: 26%; }
+  .newPop1 > p:nth-child(3) {
+    top: 36.8%;
+    left: 32%; }
+  .newPop1 > p:nth-child(4) {
+    width: 53%;
+    text-align: justify;
+    top: 47.8%;
+    left: 37%; }
+  .newPop1 .msg {
+    width: 63%;
+    position: absolute;
+    left: 27%;
+    top: 65.54%;
+    height: 13%;
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch; }
+    .newPop1 .msg p {
+      width: 100%;
+      font-size: 0.24rem;
+      color: #ecd68b;
+      text-align: justify; }
+  .newPop1 > img {
+    width: 100%; }
+  .newPop1 button {
+    position: absolute;
+    width: 40%;
+    height: 10%;
+    top: 84%;
+    left: 30%;
+    opacity: 0; }
+
+/*# sourceMappingURL=game.css.map */
