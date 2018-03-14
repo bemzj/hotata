@@ -354,28 +354,22 @@
     top: 35.4%;
     left: 31%; }
   .newPop4 textarea::-moz-placeholder {
-    color: #f0e26f;
-    opacity: 0.8; }
+    color: #f0e26f; }
   .newPop4 textarea::-webkit-input-placeholder {
-    color: #f0e26f;
-    opacity: 0.8; }
+    color: #f0e26f; }
   .newPop4 textarea::-ms-input-placeholder {
-    color: #f0e26f;
-    opacity: 0.8; }
+    color: #f0e26f; }
   .newPop4 textarea:nth-child(5) {
     left: 26%;
     top: 65.3%;
     width: 64%;
     height: 13%; }
   .newPop4 input::-moz-placeholder {
-    color: #f0e26f;
-    opacity: 0.8; }
+    color: #f0e26f; }
   .newPop4 input::-webkit-input-placeholder {
-    color: #f0e26f;
-    opacity: 0.8; }
+    color: #f0e26f; }
   .newPop4 input::-ms-input-placeholder {
-    color: #f0e26f;
-    opacity: 0.8; }
+    color: #f0e26f; }
   .newPop4 button {
     position: absolute;
     top: 84.5%;

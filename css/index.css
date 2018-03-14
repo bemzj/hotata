@@ -502,14 +502,11 @@ body {
       color: #f1e26f;
       text-indent: 0.2rem; }
     #buyStep01 .buystep01 .inputBox input::-moz-placeholder {
-      color: #f1e36f;
-      opacity: 0.8; }
+      color: #f1e36f; }
     #buyStep01 .buystep01 .inputBox input::-webkit-input-placeholder {
-      color: #f1e36f;
-      opacity: 0.8; }
+      color: #f1e36f; }
     #buyStep01 .buystep01 .inputBox input::-ms-input-placeholder {
-      color: #f1e36f;
-      opacity: 0.8; }
+      color: #f1e36f; }
     #buyStep01 .buystep01 .inputBox .imageBox {
       margin-top: -0.1rem; }
       #buyStep01 .buystep01 .inputBox .imageBox .floatl {
@@ -670,14 +667,11 @@ body {
         color: #f1e26f;
         text-indent: 33.33%; }
       #lookCode .lc03 .inputBox input::-moz-placeholder {
-        color: #f1e36f;
-        opacity: 0.8; }
+        color: #f1e36f; }
       #lookCode .lc03 .inputBox input::-webkit-input-placeholder {
-        color: #f1e36f;
-        opacity: 0.8; }
+        color: #f1e36f; }
       #lookCode .lc03 .inputBox input::-ms-input-placeholder {
-        color: #f1e36f;
-        opacity: 0.8; }
+        color: #f1e36f; }
       #lookCode .lc03 .inputBox .diss {
         width: 63%;
         margin-left: 33.33%;
@@ -791,14 +785,11 @@ body {
           color: #f1e26f;
           background-color: transparent; }
         #suggestion .sg02 .inputBox .sgtext textarea::-moz-placeholder {
-          color: #f1e36f;
-          opacity: 0.8; }
+          color: #f1e36f; }
         #suggestion .sg02 .inputBox .sgtext textarea::-webkit-input-placeholder {
-          color: #f1e36f;
-          opacity: 0.8; }
+          color: #f1e36f; }
         #suggestion .sg02 .inputBox .sgtext textarea::-ms-input-placeholder {
-          color: #f1e36f;
-          opacity: 0.8; }
+          color: #f1e36f; }
       #suggestion .sg02 .inputBox .imageBox {
         margin-left: 33.33%;
         padding: 0.2rem 0 0; }
@@ -955,14 +946,11 @@ body {
         color: #f1e26f;
         text-indent: 33.33%; }
       #use1 .use102 .inputBox input::-moz-placeholder {
-        color: #f1e36f;
-        opacity: 0.8; }
+        color: #f1e36f; }
       #use1 .use102 .inputBox input::-webkit-input-placeholder {
-        color: #f1e36f;
-        opacity: 0.8; }
+        color: #f1e36f; }
       #use1 .use102 .inputBox input::-ms-input-placeholder {
-        color: #f1e36f;
-        opacity: 0.8; }
+        color: #f1e36f; }
       #use1 .use102 .inputBox .imageBox {
         margin-left: 33.33%;
         padding: 0.25rem 0 0.05rem; }
@@ -1094,14 +1082,11 @@ body {
       color: #f1e26f;
       text-indent: 0.2rem; }
     #use3 .use3 .inputBox input::-moz-placeholder {
-      color: #f1e36f;
-      opacity: 0.8; }
+      color: #f1e36f; }
     #use3 .use3 .inputBox input::-webkit-input-placeholder {
-      color: #f1e36f;
-      opacity: 0.8; }
+      color: #f1e36f; }
     #use3 .use3 .inputBox input::-ms-input-placeholder {
-      color: #f1e36f;
-      opacity: 0.8; }
+      color: #f1e36f; }
 
 #use4 {
   position: fixed;

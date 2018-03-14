@@ -172,28 +172,22 @@
     top: 32.48%;
     left: 31%; }
   .newPop3 textarea::-moz-placeholder {
-    color: #f0e26f;
-    opacity: 0.8; }
+    color: #f0e26f; }
   .newPop3 textarea::-webkit-input-placeholder {
-    color: #f0e26f;
-    opacity: 0.8; }
+    color: #f0e26f; }
   .newPop3 textarea::-ms-input-placeholder {
-    color: #f0e26f;
-    opacity: 0.8; }
+    color: #f0e26f; }
   .newPop3 textarea:nth-child(5) {
     left: 26%;
     top: 60.4%;
     width: 64%;
     height: 13%; }
   .newPop3 input::-moz-placeholder {
-    color: #f0e26f;
-    opacity: 0.8; }
+    color: #f0e26f; }
   .newPop3 input::-webkit-input-placeholder {
-    color: #f0e26f;
-    opacity: 0.8; }
+    color: #f0e26f; }
   .newPop3 input::-ms-input-placeholder {
-    color: #f0e26f;
-    opacity: 0.8; }
+    color: #f0e26f; }
   .newPop3 button {
     position: absolute;
     top: 86%;
