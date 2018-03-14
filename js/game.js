@@ -110,12 +110,24 @@ $(function(){
 			mydata = data;
 			addDanmu('#danmu','danmuBox',mydata,25);
 		});
+		$('.startBtn').addClass('animated bounceIn');
+		$('.gameTitle').addClass('animated fadeInDown');
+		$('.jfbox').addClass('animated fadeInLeft');
+		$('.cgBox').addClass('animated fadeInRight');
 		//
 		$('.mygifts').on('click',function(){
 			$('#homepage').hide();
 			$('#myGift').show();
+			$('.startBtn').removeClass('animated bounceIn');
+			$('.gameTitle').removeClass('animated fadeInDown');
+			$('.jfbox').removeClass('animated fadeInLeft');
+			$('.cgBox').removeClass('animated fadeInRight');
 		});
 		$('#myGift .rback').on('click',function(){
+			$('.startBtn').addClass('animated bounceIn');
+			$('.gameTitle').addClass('animated fadeInDown');
+			$('.jfbox').addClass('animated fadeInLeft');
+			$('.cgBox').addClass('animated fadeInRight');
 			$('#homepage').show();
 			$('#myGift').hide();
 			clearInterval(cTween);

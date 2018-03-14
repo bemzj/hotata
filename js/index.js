@@ -190,3 +190,16 @@ function flower(id,n,numb,time){
 	},time);
 	
 }
+//闯关成功
+function shareSuccess(fun){
+	$('#shareSuccess').remove();
+	var html = '<div id="shareSuccess"><div class="shareSuccess"><img src="img/game03.png" /><button></button></div></div>';
+	$('body').append(html);
+	$('#shareSuccess button').on('click',function(event){
+		$('#shareSuccess').remove();
+		if((typeof fun)=='function')
+		{
+			fun();
+		}
+	});
+}
