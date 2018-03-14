@@ -15,7 +15,7 @@ function mycodes(){
 	//返回
 	$('#myCode .rback').on('click',function(){
 		$('#myCode').hide();
-		showHome();
+		$('#old').show();
 	});
 	//分享
 	$('#myCode .shareBtn').on('click',function(event){

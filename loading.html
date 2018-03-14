@@ -8,7 +8,6 @@
 		<meta content="black" name="apple-mobile-web-app-status-bar-style"/>
 		<meta content="telephone=no" name="format-detection"/>
 		<link rel="stylesheet" href="css/reset.css" />
-		<link rel="stylesheet" href="css/loading.css" />
 		<script type="text/javascript" src="js/rem.js" ></script>
 		<script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
 		<script type="text/javascript" src="js/lufylegend-1.10.1.min.js" ></script>
@@ -16,43 +15,7 @@
 	<body>
 		<!--删除不良信息-->
 		<div class="delete1" hidden="hidden"></div>
-		<!--预加载-->
-		<div id="reload">
-			<ul>
-				<li>
-					<div class="logoBox">
-						<img src="img/logo.png" />
-						<div class="load01">
-							<img src="img/load01.png" />
-						</div>
-						<div class="loadAll">
-							<img src="img/load02.png" />
-							<div></div>
-						</div>
-						<div class="loadAll loadAll2">
-							<img src="img/load02.png" />
-							<div></div>
-						</div>
-						<div class="loadAll loadAll3">
-							<img src="img/load03.png" />
-							<div></div>
-						</div>
-						<div class="loadAll loadAll4">
-							<img src="img/load03.png" />
-							<div></div>
-						</div>
-					</div>
-				</li>
-				<li>
-					<div class="upOut">
-						<div class="up">
-						
-						</div>
-					</div>		
-					<p class="load">0%</p>
-				</li>
-			</ul>
-		</div>
+		
 		<div id="hotata" style="opacity: 0;">
 			
 		</div>
@@ -92,7 +55,14 @@
 				{path:url+'img/g05.png',type:'img',name:'g05'},
 				{path:url+'img/g06.png',type:'img',name:'g06'},
 				{path:url+'img/g07.png',type:'img',name:'g07'},
+				{path:url+'img/gift0.png',type:'img',name:'gift0'},
 				{path:url+'img/gift1.png',type:'img',name:'gift1'},
+				{path:url+'img/gift2.png',type:'img',name:'gift2'},
+				{path:url+'img/gift3.png',type:'img',name:'gift3'},
+				{path:url+'img/gift4.png',type:'img',name:'gift4'},
+				{path:url+'img/gift5.png',type:'img',name:'gift5'},
+				{path:url+'img/gift6.png',type:'img',name:'gift6'},
+				{path:url+'img/gift7.png',type:'img',name:'gift7'},
 				{path:url+'img/home.jpg',type:'img',name:'home'},
 				{path:url+'img/home1.png',type:'img',name:'home1'},
 				{path:url+'img/home2.png',type:'img',name:'home2'},
@@ -113,6 +83,8 @@
 				{path:url+'img/mg05.png',type:'img',name:'mg05'},
 				{path:url+'img/mg06.png',type:'img',name:'mg06'},
 				{path:url+'img/mg07.png',type:'img',name:'mg07'},
+				{path:url+'img/mg08.png',type:'img',name:'mg08'},
+				{path:url+'img/mg09.png',type:'img',name:'mg09'},
 				{path:url+'img/music.png',type:'img',name:'music'},
 				{path:url+'img/newpop01.png',type:'img',name:'newpop01'},
 				{path:url+'img/newpop02.png',type:'img',name:'newpop02'},
@@ -120,6 +92,7 @@
 				{path:url+'img/newpop05.png',type:'img',name:'newpop05'},
 				{path:url+'img/newpop06.png',type:'img',name:'newpop06'},
 				{path:url+'img/newpop07.png',type:'img',name:'newpop07'},
+				{path:url+'img/newpop08.png',type:'img',name:'newpop08'},
 				{path:url+'img/nogift.png',type:'img',name:'nogift'},
 				{path:url+'img/pop01.png',type:'img',name:'pop01'},
 				{path:url+'img/pop02.png',type:'img',name:'pop02'},
@@ -136,6 +109,7 @@
 				{path:url+'img/sg06.png',type:'img',name:'sg06'},
 				{path:url+'img/sg07.png',type:'img',name:'sg07'},
 				{path:url+'img/sGift.png',type:'img',name:'sGift'},
+				{path:url+'img/sGift1.png',type:'img',name:'sGift1'},
 				{path:url+'img/share.png',type:'img',name:'share'},
 				{path:url+'img/shareArrow.png',type:'img',name:'shareArrow'},
 				{path:url+'img/star.png',type:'img',name:'star'},
@@ -160,20 +134,10 @@
 			    addChild(backLayer);//添加背景层到游戏环境中
 			    musicLayer = new LSprite();//创建音乐层
 			    addChild(musicLayer);//添加音乐层到游戏环境中
-			    LLoadManage.load(loadImg,progress,loadImging);
+			    LLoadManage.load(loadImg,"",loadImging);
 			}
-			function progress(per){
-				
-				var index = parseInt(per);
-				$('#reload ul li:nth-child(2) .up').css('width',per+'%');
-				$('#reload ul li:nth-child(2) p').text(index+'%');
-			}
+
 			function loadImging(){
-				$('#loading', parent.document).fadeOut(200,function(){
-					$(this).remove();
-					
-				});
-				parent.showHome();
 			}
 		</script>
 		<!--删除不良信息-->

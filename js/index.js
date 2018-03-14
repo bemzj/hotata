@@ -29,6 +29,21 @@ $(function(){
 			$('#bg')[0].play();
 		}
 	});
+	//加载
+	var re = 0;
+	var reTween = setInterval(function(){
+		re++;
+		if(re==101)
+		{
+			clearInterval(reTween);
+			$('#reload').hide();
+			showHome();
+		}else{
+			$('#reload ul li:nth-child(2) .up').css('width',re+'%');
+			$('#reload ul li:nth-child(2) p').text(re+'%');
+		}
+		
+	},30);
 });
 //显示首页
 function showHome(){
@@ -93,7 +108,27 @@ function showHome(){
 		$('.homep').hide().removeClass('animated fadeInDown');
 		$('.oldNew').hide().removeClass('animated rotateInDownLeft');
 		$('.look').hide().removeClass('animated rotateInUpRight');
-		mycodes();
+		$('#old').show();
+		$("#old .btn1").on('click',function(){
+			$('#old').hide();
+			mycodes();
+		});
+		$("#old .btn2").on('click',function(){
+			
+		});
+		//返回
+		$('#old .rback').on('touchstart',function(){
+			$('#old').hide();
+			showHome();
+		});
+//		window.frames["oldNew"].document.getElementById("btn2").on('click',function(){
+//			$('#oldNew').hide();
+//			mycodes();
+//		});
+//		window.frames["oldNew"].document.getElementById("btn-return").on('click',function(){
+//			$('#oldNew').hide();
+//			showHome();
+//		});
 	});
 	$('.look').on('click',function(){
 		$('#homepage').hide();

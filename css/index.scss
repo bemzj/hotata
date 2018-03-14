@@ -1320,15 +1320,8 @@ body{
     top: 0;
     width: 100%;
     height: 100%;
+    border: 0;
     z-index: 50;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    display: -webkit-flex;
-    -webkit-align-items: center;
-    -webkit-justify-content: center;
-    -webkit-flex-direction: column;
 }
 #rule{
     position: fixed;
@@ -1375,4 +1368,45 @@ body{
     width: 24%;
     height: 4.8%;
     opacity: 0;
+}
+#old{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    background: url(../image/bg.jpg) no-repeat center center;
+    background-size: 100%;
+    .btn1{
+        position: absolute;
+        bottom: 8%;
+        left: 8%;
+        width: 40%;
+        display: block;
+        >img{
+            width: 100%;
+            display: block;
+        }
+    }
+    .logo{
+        position: absolute;
+        right: 3.8%;
+        top: 2.5%;
+        width: 26.8%;
+        >img{
+            
+        }
+    }
+    .btn2{
+        position: absolute;
+        bottom: 8%;
+        right: 8%;
+        width: 40%;
+        display: block;
+        >img{
+            width: 100%;
+            display: block;
+        }
+    }
 }
