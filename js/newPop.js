@@ -1,14 +1,3 @@
-$(function(){
-	setTimeout(function(){
-//		newpop6(function(){
-//			alert(1);
-//		});
-		newpop7('img/gift1.png',"安迪人偶");
-//		newpop1("王文杰","13872653625","广东省 广州市 海珠区","琶洲商业广场11栋琶洲商业广场11栋琶洲商业广场11栋","包装好一点");
-	},2000)
-	
-
-});
 //查看信息
 function newpop1(name,phone,city,address,content){
 	$('#newPop1').remove();

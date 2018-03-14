@@ -7,24 +7,56 @@
 		<meta content="yes" name="apple-mobile-web-app-capable"/>
 		<meta content="black" name="apple-mobile-web-app-status-bar-style"/>
 		<meta content="telephone=no" name="format-detection"/>
+		<link rel="stylesheet" href="css/demo.css" />
+		<link rel="stylesheet" href="css/ydui.css" />
 		<link rel="stylesheet" href="css/reset.css" />
 		<link rel="stylesheet" href="css/award.css" />
 		<script type="text/javascript" src="js/rem.js" ></script>
 		<script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
 		<script type="text/javascript" src="js/awardRotate.js" ></script>
-		<script type="text/javascript" src="js/award.js" ></script>
+		
 	</head>
 	<body>
+		<div class="delete1" hidden="hidden"></div>
 		<div id="award">
+			<div class="rback">
+				<input type="image" src="img/return.png" />
+			</div>
+			<div class="awardTitle">
+				<img src="img/award05.png" />
+				<div>
+					<p>1</p>
+				</div>
+			</div>
 			<div class="awardBox">
 				<img src="img/award03.png" />
 				<div class="awardGift">
-					<img src="img/award01.png" />
+					<img src="img/award01.png" style="transform: rotate(22deg);"/>
 				</div>
 				<div class="start">
 					<img src="img/award04.png" />
 				</div>
 			</div>
+			<div class="awardBtn">
+				<a href="###"><img src="img/award02.png"/></a>
+			</div>
 		</div>
+		<!--填写信息1-->
+		<div id="newPop3" class="newPop" style="display: none;">
+			<div class="newPop3">
+				<input type="text" placeholder="请输入您的姓名"/>
+				<input type="text" placeholder="请输入您的手机号码"/>
+				<input type="text" placeholder="请选择省市区" id="acity"/>
+				<textarea placeholder="详细地址" maxlength="50"></textarea>
+				<textarea placeholder="您可以输入200个字符" maxlength="200"></textarea>
+				<img src="img/newpop03.png" />
+				<button class="np3Yes"></button>
+				<button class="np3No"></button>
+			</div>
+		</div>
+		<script type="text/javascript" src="js/ydui.citys.js" ></script>
+		<script type="text/javascript" src="js/ydui.js" ></script>
+		<script type="text/javascript" src="js/award.js" ></script>
+		<div class="delete2" hidden="hidden"></div>
 	</body>
 </html>

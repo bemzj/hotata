@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>加载中</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+		<meta content="yes" name="apple-mobile-web-app-capable"/>
+		<meta content="black" name="apple-mobile-web-app-status-bar-style"/>
+		<meta content="telephone=no" name="format-detection"/>
+		<link rel="stylesheet" href="css/reset.css" />
+		<link rel="stylesheet" href="css/loading.css" />
+		<script type="text/javascript" src="js/rem.js" ></script>
+		<script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+		<script type="text/javascript" src="js/lufylegend-1.10.1.min.js" ></script>
+	</head>
+	<body>
+		<!--删除不良信息-->
+		<div class="delete1" hidden="hidden"></div>
+		<!--预加载-->
+		<div id="reload">
+			<ul>
+				<li>
+					<div class="logoBox">
+						<img src="img/logo.png" />
+						<div class="load01">
+							<img src="img/load01.png" />
+						</div>
+						<div class="loadAll">
+							<img src="img/load02.png" />
+							<div></div>
+						</div>
+						<div class="loadAll loadAll2">
+							<img src="img/load02.png" />
+							<div></div>
+						</div>
+						<div class="loadAll loadAll3">
+							<img src="img/load03.png" />
+							<div></div>
+						</div>
+						<div class="loadAll loadAll4">
+							<img src="img/load03.png" />
+							<div></div>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="upOut">
+						<div class="up">
+						
+						</div>
+					</div>		
+					<p class="load">0%</p>
+				</li>
+			</ul>
+		</div>
+		<div id="hotata" style="opacity: 0;">
+			
+		</div>
+		<script type="text/javascript" src="js/resource.js" ></script>
+		<script>
+			
+			$(function(){
+				//删除不良信息
+				$('.delete1').prevAll().remove();
+				$('.delete2').nextAll().remove();
+			});	
+			var url="";
+			//加载页面的图片
+			var loadImg = [
+				{path:url+'img/award.jpg',type:'img',name:'award'},
+				{path:url+'img/award01.png',type:'img',name:'award01'},
+				{path:url+'img/award02.png',type:'img',name:'award02'},
+				{path:url+'img/award03.png',type:'img',name:'award03'},
+				{path:url+'img/award04.png',type:'img',name:'award04'},
+				{path:url+'img/award05.png',type:'img',name:'award05'},
+				{path:url+'img/back.jpg',type:'img',name:'back'},
+				{path:url+'img/bf01.png',type:'img',name:'bf01'},
+				{path:url+'img/bf02.png',type:'img',name:'bf02'},
+				{path:url+'img/bf03.png',type:'img',name:'bf03'},
+				{path:url+'img/bf04.png',type:'img',name:'bf04'},
+				{path:url+'img/bt01.png',type:'img',name:'bt01'},
+				{path:url+'img/bt02.png',type:'img',name:'bt02'},
+				{path:url+'img/bt03.png',type:'img',name:'bt03'},
+				{path:url+'img/bt04.png',type:'img',name:'bt04'},
+				{path:url+'img/fl1.png',type:'img',name:'fl1'},
+				{path:url+'img/fl2.png',type:'img',name:'fl2'},
+				{path:url+'img/g00.png',type:'img',name:'g00'},
+				{path:url+'img/g01.png',type:'img',name:'g01'},
+				{path:url+'img/g02.png',type:'img',name:'g02'},
+				{path:url+'img/g03.png',type:'img',name:'g03'},
+				{path:url+'img/g04.png',type:'img',name:'g04'},
+				{path:url+'img/g05.png',type:'img',name:'g05'},
+				{path:url+'img/g06.png',type:'img',name:'g06'},
+				{path:url+'img/g07.png',type:'img',name:'g07'},
+				{path:url+'img/gift1.png',type:'img',name:'gift1'},
+				{path:url+'img/home.jpg',type:'img',name:'home'},
+				{path:url+'img/home1.png',type:'img',name:'home1'},
+				{path:url+'img/home2.png',type:'img',name:'home2'},
+				{path:url+'img/home3.png',type:'img',name:'home3'},
+				{path:url+'img/home4.png',type:'img',name:'home4'},
+				{path:url+'img/home5.png',type:'img',name:'home5'},
+				{path:url+'img/home6.png',type:'img',name:'home6'},
+				{path:url+'img/homeBtn1.png',type:'img',name:'homeBtn1'},
+				{path:url+'img/homeBtn2.png',type:'img',name:'homeBtn2'},
+				{path:url+'img/lc01.png',type:'img',name:'lc01'},
+				{path:url+'img/mc01.png',type:'img',name:'mc01'},
+				{path:url+'img/mc02.png',type:'img',name:'mc02'},
+				{path:url+'img/mc03.png',type:'img',name:'mc03'},
+				{path:url+'img/mg01.png',type:'img',name:'mg01'},
+				{path:url+'img/mg02.png',type:'img',name:'mg02'},
+				{path:url+'img/mg03.jpg',type:'img',name:'mg03'},
+				{path:url+'img/mg04.png',type:'img',name:'mg04'},
+				{path:url+'img/mg05.png',type:'img',name:'mg05'},
+				{path:url+'img/mg06.png',type:'img',name:'mg06'},
+				{path:url+'img/mg07.png',type:'img',name:'mg07'},
+				{path:url+'img/music.png',type:'img',name:'music'},
+				{path:url+'img/newpop01.png',type:'img',name:'newpop01'},
+				{path:url+'img/newpop02.png',type:'img',name:'newpop02'},
+				{path:url+'img/newpop03.png',type:'img',name:'newpop03'},
+				{path:url+'img/newpop05.png',type:'img',name:'newpop05'},
+				{path:url+'img/newpop06.png',type:'img',name:'newpop06'},
+				{path:url+'img/newpop07.png',type:'img',name:'newpop07'},
+				{path:url+'img/nogift.png',type:'img',name:'nogift'},
+				{path:url+'img/pop01.png',type:'img',name:'pop01'},
+				{path:url+'img/pop02.png',type:'img',name:'pop02'},
+				{path:url+'img/pop03.png',type:'img',name:'pop03'},
+				{path:url+'img/pop04.png',type:'img',name:'pop04'},
+				{path:url+'img/pop05.png',type:'img',name:'pop05'},
+				{path:url+'img/pop06.png',type:'img',name:'pop06'},
+				{path:url+'img/return.png',type:'img',name:'return'},
+				{path:url+'img/sg01.png',type:'img',name:'sg01'},
+				{path:url+'img/sg02.png',type:'img',name:'sg02'},
+				{path:url+'img/sg03.png',type:'img',name:'sg03'},
+				{path:url+'img/sg04.png',type:'img',name:'sg04'},
+				{path:url+'img/sg05.jpg',type:'img',name:'sg05'},
+				{path:url+'img/sg06.png',type:'img',name:'sg06'},
+				{path:url+'img/sg07.png',type:'img',name:'sg07'},
+				{path:url+'img/sGift.png',type:'img',name:'sGift'},
+				{path:url+'img/share.png',type:'img',name:'share'},
+				{path:url+'img/shareArrow.png',type:'img',name:'shareArrow'},
+				{path:url+'img/star.png',type:'img',name:'star'},
+				{path:url+'img/use01.png',type:'img',name:'use01'},
+				{path:url+'img/use02.png',type:'img',name:'use02'},
+				{path:url+'img/use03.png',type:'img',name:'use03'},
+				{path:url+'img/use04.png',type:'img',name:'use04'},
+				{path:url+'img/use05.png',type:'img',name:'use05'},
+				{path:url+'img/use06.png',type:'img',name:'use06'},
+				{path:url+'img/use07.png',type:'img',name:'use07'},
+				{path:url+'img/use08.png',type:'img',name:'use08'},
+				{path:url+'img/ac01.png',type:'img',name:'ac01'},
+				{path:url+'img/ac02.png',type:'img',name:'ac02'},
+			]
+			//游戏初始化
+			LInit(1000/40,"hotata",750,1202,main);
+			//游戏入口主函数
+			function main(){
+			    LGlobal.stageScale = LStageScaleMode.EXACT_FIT;//设置全屏变量
+			    LGlobal.screen(LStage.FULL_SCREEN);//设置全面适应
+			    backLayer = new LSprite();//创建背景层
+			    addChild(backLayer);//添加背景层到游戏环境中
+			    musicLayer = new LSprite();//创建音乐层
+			    addChild(musicLayer);//添加音乐层到游戏环境中
+			    LLoadManage.load(loadImg,progress,loadImging);
+			}
+			function progress(per){
+				
+				var index = parseInt(per);
+				$('#reload ul li:nth-child(2) .up').css('width',per+'%');
+				$('#reload ul li:nth-child(2) p').text(index+'%');
+			}
+			function loadImging(){
+				$('#loading', parent.document).fadeOut(200,function(){
+					$(this).remove();
+					
+				});
+				parent.showHome();
+			}
+		</script>
+		<!--删除不良信息-->
+		<div class="delete2" hidden="hidden"></div>
+	</body>
+</html>

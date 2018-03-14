@@ -40,6 +40,7 @@
 			<div class="homep home">
 				<nobr><p>活动时间：2018/3/15-2018/5/6</p></nobr>
 			</div>
+			<button></button>
 			<input type="image" src="img/homeBtn1.png" class="oldNew home" />
 			<input type="image" src="img/homeBtn2.png" class="look home" />
 		</div>
@@ -363,106 +364,14 @@
 				<button></button>
 			</div>
 		</div>
-		<!--我的礼物-->
-		<div id="myGift" style="display: none;">
+		<div id="rule" style="display: none;">
 			<div class="rback">
 				<input type="image" src="img/return.png" />
 			</div>
-			<div class="jifen">
-				<img src="img/mg01.png" />
-				<div>
-					<p>0</p>
-				</div>
-			</div>
-			<div class="mg01">
-				<img src="img/mg02.png" />
-			</div>
-			<div class="mg02">
-				<button class="floatl btnhas">我的礼品</button>
-				<button class="floatl">积分商城</button>
-				<div class="clearl"></div>
-			</div>
-			<div class="mg03">
-				<p>注：每种礼品只能兑换一次</p>
-			</div>
-			<div class="giftBox" style="display: none;">
-				<div class="noGift">
-					<img src="img/nogift.png" />
-					<p>暂无礼品</p>
-				</div>
-				<div class="giftChild" style="display: none;">
-					<img src="img/mg04.png" />
-					<div class="imgBox">
-						<img src="img/gift1.png" />
-					</div>
-					<div class="ctenBox">
-						<p>价值88元抱枕</p>
-						<p>物流单号：029387463</p>
-					</div>
-					<button></button>
-				</div>
-			</div>
-			<div class="shopBox">
-				<div class="shopChild noshop">
-					<img src="img/mg07.png" />
-					<div class="shopImg">
-						<img src="img/gift1.png" />
-					</div>
-					<div class="stenBox">
-						<p>价值88元抱枕</p>
-						<p>需要积分：10000</p>
-						<p>剩余：563</p>
-					</div>
-					<button></button>
-				</div>
-				<div class="shopChild hasShop">
-					<img src="img/mg06.png" />
-					<div class="shopImg">
-						<img src="img/gift1.png" />
-					</div>
-					<div class="stenBox">
-						<p>价值88元抱枕</p>
-						<p>需要积分：10000</p>
-						<p>剩余：563</p>
-					</div>
-				</div>
-				<div class="shopChild hasShop">
-					<img src="img/mg06.png" />
-					<div class="shopImg">
-						<img src="img/gift1.png" />
-					</div>
-					<div class="stenBox">
-						<p>价值88元抱枕</p>
-						<p>需要积分：10000</p>
-						<p>剩余：563</p>
-					</div>
-				</div>
-			</div>
-		</div>
-		<!--填写信息1-->
-		<div id="newPop3" class="newPop" style="display: none;">
-			<div class="newPop3">
-				<input type="text" placeholder="请输入您的姓名"/>
-				<input type="text" placeholder="请输入您的手机号码"/>
-				<input type="text" placeholder="请选择省市区"/>
-				<textarea placeholder="详细地址" maxlength="50"></textarea>
-				<textarea placeholder="您可以输入200个字符" maxlength="200"></textarea>
-				<img src="img/newpop03.png" />
-				<button class="np3Yes"></button>
-				<button class="np3No"></button>
-			</div>
-		</div>
-		<!--填写信息2-->
-		<div id="newPop4" class="newPop" style="display: none;">
-			<div class="newPop4">
-				<input type="text" placeholder="请输入您的姓名"/>
-				<input type="text" placeholder="请输入您的手机号码"/>
-				<input type="text" placeholder="请选择省市区"/>
-				<textarea placeholder="详细地址" maxlength="50"></textarea>
-				<textarea placeholder="您可以输入200个字符" maxlength="200"></textarea>
-				<img src="img/newpop04.png" />
-				<button class="np4Yes"></button>
-				<button class="np4No"></button>
+			<div class="rule">
+				<img src="img/ac01.png" />
+				<button class="rule1"></button>
+				<button class="rule2"></button>
 			</div>
 		</div>
 		<script>
@@ -483,14 +392,15 @@
 				    }, false);
 				}    
 			audioAutoPlay('bg');
-	    </script>
-	    <script type="text/javascript" src="js/game.js" ></script>
+	   </script>
 	    <script type="text/javascript" src="js/newPop.js" ></script>
 	    <script type="text/javascript" src="js/share-code-pop.js" ></script>
 	    <script type="text/javascript" src="js/tools.min.js" ></script>
 	    <script type="text/javascript" src="js/upImg.js" ></script>
 	    <script type="text/javascript" src="js/suggestion-buy.js" ></script>
 		<script type="text/javascript" src="js/index.js" ></script>
+		<!--加载页面-->
+		<iframe id="loading" name="loading" src="loading.html"></iframe>
 		<!--删除不良信息-->
 		<div class="delete2" hidden="hidden"></div>
 	</body>

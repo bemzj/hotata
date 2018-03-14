@@ -29,7 +29,6 @@ $(function(){
 			$('#bg')[0].play();
 		}
 	});
-	showHome();
 });
 //显示首页
 function showHome(){
@@ -38,18 +37,39 @@ function showHome(){
 	$('.flower').remove();
 	var sTime = 250;
 	var oTime = 1000;
-	$('.home2').show().find('img').addClass('animated bounceIn');
+//	$('.home2').show().find('img').addClass('animated bounceIn');
+//	setTimeout(function(){
+//		$('.home4').show().find('img').addClass('animated bounceIn');
+//		setTimeout(function(){
+//			$('.home5').show().find('img').addClass('animated bounceIn');
+//			setTimeout(function(){
+//				$('.home3').show().find('img').addClass('animated rotateInDownRight');
+//				$('.oldNew').show().addClass('animated rotateInDownLeft');
+//				$('.look').show().addClass('animated rotateInUpRight');
+//				setTimeout(function(){
+//					$('.home1').show().find('img').addClass('animated fadeIn');
+//					$('.homep').show().addClass('animated fadeInDown');
+//				},oTime);
+//			},sTime);
+//		},sTime);
+//	},sTime);
+	$('.home1').show().find('img').addClass('animated fadeIn');				
+	$('.home2').show().find('img').addClass('animated fadeIn');
+	$('.home4').show().find('img').addClass('animated fadeIn');
+	$('.home5').show().find('img').addClass('animated fadeIn');
+	$('.home3').show().find('img').addClass('animated fadeIn');
+	$('.oldNew').show().addClass('animated rotateInDownLeft');
+	$('.look').show().addClass('animated rotateInUpRight');
+	$('.homep').show().addClass('animated fadeInDown');
 	setTimeout(function(){
-		$('.home4').show().find('img').addClass('animated bounceIn');
+		
 		setTimeout(function(){
-			$('.home5').show().find('img').addClass('animated bounceIn');
+			
 			setTimeout(function(){
-				$('.home3').show().find('img').addClass('animated rotateInDownRight');
-				$('.oldNew').show().addClass('animated rotateInDownLeft');
-				$('.look').show().addClass('animated rotateInUpRight');
+				
+				
 				setTimeout(function(){
-					$('.home1').show().find('img').addClass('animated fadeIn');
-					$('.homep').show().addClass('animated fadeInDown');
+					
 				},oTime);
 			},sTime);
 		},sTime);
@@ -84,6 +104,42 @@ function showHome(){
 		$('.oldNew').hide().removeClass('animated rotateInDownLeft');
 		$('.look').hide().removeClass('animated rotateInUpRight');
 		showHome();
+	});
+//	$('.oldNew').on('click',function(){
+//		$('#homepage').hide();
+//		$('.flower').remove();
+//		clearInterval(eTime);
+//		$('.home').hide().find('img').removeClass();
+//		$('.homep').hide().removeClass('animated fadeInDown');
+//		$('.oldNew').hide().removeClass('animated rotateInDownLeft');
+//		$('.look').hide().removeClass('animated rotateInUpRight');
+//		mycodes();
+//	});
+//	$('.look').on('click',function(){
+//		$('#homepage').hide();
+//		$('.flower').remove();
+//		clearInterval(eTime);
+//		$('.home').hide().find('img').removeClass();
+//		$('.homep').hide().removeClass('animated fadeInDown');
+//		$('.oldNew').hide().removeClass('animated rotateInDownLeft');
+//		$('.look').hide().removeClass('animated rotateInUpRight');
+//		showHome();
+//	});
+	$('#homepage button').on('click',function(){
+		$('#homepage').hide();
+		$('.flower').remove();
+		clearInterval(eTime);
+		$('.home').hide().find('img').removeClass();
+		$('.homep').hide().removeClass('animated fadeInDown');
+		$('.oldNew').hide().removeClass('animated rotateInDownLeft');
+		$('.look').hide().removeClass('animated rotateInUpRight');
+		$('#rule').show();
+		$('#rule .rule1').on('click',function(){
+			
+		});
+		$('#rule .rule2').on('click',function(){
+			
+		});
 	});
 }
 //烟花
