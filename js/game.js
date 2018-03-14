@@ -100,6 +100,7 @@ $(function(){
     $('#gcity').focus(function(){
     	$(this).blur();
     });
+ 
 });
 
 //游戏提示

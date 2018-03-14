@@ -54,8 +54,7 @@ function newpop5(fun){
 	});
 }
 //礼品已经兑换完
-function newpop6(){
-	
+function newpop6(){	
 	$('#newPop6').remove();
 	var html = "";
 	html += '<div id="newPop6" class="newPop"><div class="newPop6">';
@@ -82,4 +81,18 @@ function newpop7(src,name,fun){
 			fun();
 		}				
 	});					
+}
+//礼品已经兑换完
+function newpop8(){	
+	$('#newPop8').remove();
+	var html = "";		
+	html += '<div id="newPop8" class="newPop"><div class="newPop8"><img src="img/newpop08.png" />';
+	html += '<button class="np8Yes"></button><button class="np8No"></button></div></div>';
+	$('body').append(html);
+	$('#newPop8 .np8Yes').on('click', function() {
+		$('#newPop8').remove();
+	});
+	$('#newPop8 .np8No').on('click', function() {
+		$('#newPop8').remove();
+	});
 }

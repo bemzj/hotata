@@ -244,6 +244,21 @@
   -webkit-justify-content: center;
   background-color: rgba(0, 0, 0, 0.7); }
 
+.newPop8 {
+  width: 80%;
+  position: relative; }
+  .newPop8 > img {
+    width: 100%; }
+  .newPop8 button {
+    position: absolute;
+    top: 82%;
+    left: 7%;
+    width: 41%;
+    height: 11%;
+    opacity: 0; }
+  .newPop8 .np8No {
+    left: 52%; }
+
 .newPop7 {
   width: 80%;
   position: relative; }
