@@ -100,7 +100,7 @@ $(function(){
     $('#gcity').focus(function(){
     	$(this).blur();
     });
- 
+ 	qd(5)
 });
 
 //游戏提示
@@ -173,5 +173,26 @@ function shareSuccess(fun){
 			fun();
 		}
 	});
+}
+//签到
+function qd(num,fun){
+	//num为第几天
+	var html = "";
+	html += '<div id="qiandao"><div class="qiandao">';
+	html += '<div><img src="img/game04.png"/><button></button></div></div></div>';
+	$('body').append(html);
+	for(var i=0;i<num;i++)
+	{
+		$('.qiandao').prepend('<img src="img/game05.png" class="animated bounceIn"/>');
+	}
+	$('#qiandao button').on('click',function(){
+		$('#qiandao').remove();
+		if((typeof fun)=='function')
+		{
+			fun();
+		}
+	});
+
+				
 }
 

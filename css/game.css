@@ -753,9 +753,31 @@
     position: relative; }
     #qiandao > .qiandao > div > img {
       width: 100%; }
+    #qiandao > .qiandao button {
+      position: absolute;
+      bottom: 10%;
+      width: 30%;
+      left: 35%;
+      height: 10%; }
     #qiandao > .qiandao > img {
       position: absolute;
       width: 6.15%;
-      left: 0%; }
+      left: 21%;
+      top: 24.5%; }
+    #qiandao > .qiandao > img:nth-child(2) {
+      left: 43.5%; }
+    #qiandao > .qiandao > img:nth-child(3) {
+      left: 66.5%; }
+    #qiandao > .qiandao > img:nth-child(4) {
+      left: 89.5%; }
+    #qiandao > .qiandao > img:nth-child(5) {
+      left: 32.5%;
+      top: 48.5%; }
+    #qiandao > .qiandao > img:nth-child(6) {
+      left: 55.5%;
+      top: 48.5%; }
+    #qiandao > .qiandao > img:nth-child(7) {
+      left: 78.5%;
+      top: 48.5%; }
 
 /*# sourceMappingURL=game.css.map */
