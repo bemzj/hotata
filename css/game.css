@@ -496,4 +496,93 @@
     left: 30%;
     opacity: 0; }
 
+#tips {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  display: -webkit-flex;
+  -webkit-align-items: center;
+  -webkit-justify-content: center;
+  background-color: rgba(0, 0, 0, 0.7); }
+  #tips > .tips {
+    position: relative;
+    width: 73.86%; }
+    #tips > .tips > img {
+      width: 100%; }
+  #tips button {
+    position: absolute;
+    bottom: 0;
+    left: 29.5%;
+    width: 38%;
+    height: 7%; }
+
+#share {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 50;
+  background-color: rgba(0, 0, 0, 0.75); }
+  #share .sa {
+    width: 23%;
+    position: absolute;
+    top: 4%;
+    right: 4%; }
+    #share .sa > img {
+      width: 100%; }
+  #share .gift {
+    width: 62%;
+    margin: 0 auto;
+    margin-top: 32%; }
+    #share .gift img {
+      width: 100%; }
+  #share .star {
+    width: 36.67%;
+    position: absolute;
+    top: 17%;
+    left: 17%;
+    animation: bling 1s linear infinite;
+    -moz-animation: bling 1s linear infinite;
+    -webkit-animation: bling 1s linear infinite;
+    -ms-animation: bling 1s linear infinite; }
+    #share .star > img {
+      width: 100%; }
+
+@keyframes bling {
+  0% {
+    opacity: 1; }
+  50% {
+    opacity: 0.5; }
+  100% {
+    opacity: 1; } }
+@-moz-keyframes bling {
+  0% {
+    opacity: 1; }
+  50% {
+    opacity: 0.5; }
+  100% {
+    opacity: 1; } }
+@-webkit-keyframes bling {
+  0% {
+    opacity: 1; }
+  50% {
+    opacity: 0.5; }
+  100% {
+    opacity: 1; } }
+@-ms-keyframes bling {
+  0% {
+    opacity: 1; }
+  50% {
+    opacity: 0.5; }
+  100% {
+    opacity: 1; } }
+
 /*# sourceMappingURL=game.css.map */

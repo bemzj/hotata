@@ -106,8 +106,12 @@ $(function(){
     	$('#newPop3').hide();
     	newpop2(function(){
     		//提交到后台$.get();
-    		alert("已提交");
+    		upScss();
     	});
+    });
+    //我的礼品
+    $('.awardBtn a').on('click',function(){
+    	
     });
 });
 function rnd(rate){
@@ -198,5 +202,20 @@ function newpop2(fun){
 	}
 	$('#newPop2 .npNo').on('click', function() {
 		$('#newPop2').remove();
+	});
+}
+//
+function upScss(){
+	var html = "";
+	$('#upSuccess').remove();
+	html += '<div id="upSuccess"><div class="upSuccess"><img src="img/sg08.png" />';
+	html += '<button></button></div></div>';
+	$('body').append(html);
+	$('#upSuccess button').on('click',function(){
+		$('#upSuccess').remove();
+		if((typeof fun)=='function')
+		{
+			fun();
+		}
 	});
 }

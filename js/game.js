@@ -100,5 +100,37 @@ $(function(){
     $('#gcity').focus(function(){
     	$(this).blur();
     });
+    gameTips(function(){
+    	
+    });
+    
+    sharing2();
 });
 
+//游戏提示
+function gameTips(fun){
+	var html = "";
+	$('#tips').remove();
+	html += '<div id="tips"><div class="tips"><img src="img/tips.png" />';
+	html += '<button></button></div></div>';
+	$('body').append(html);
+	$('#tips button').on('click',function(){
+		$('#tips').remove();
+		if((typeof fun)=='function')
+		{
+			fun();
+		}
+	});
+}
+//分享
+function sharing2(){
+	$('#share').remove();
+	var html = "";
+	html += '<div id="share"><div class="sa"><img src="img/shareArrow.png" /></div><div class="gift">';
+	html += '<img src="img/sGift.png" /></div><div class="star"><img src="img/star.png" /></div></div>';	
+	$('body').append(html);
+	$('#share').on('click',function(event){
+		event.stopPropagation();
+		$(this).remove();
+	});
+}
