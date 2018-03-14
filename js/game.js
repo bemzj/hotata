@@ -127,10 +127,14 @@ function sharing2(){
 	$('#share').remove();
 	var html = "";
 	html += '<div id="share"><div class="sa"><img src="img/shareArrow.png" /></div><div class="gift">';
-	html += '<img src="img/sGift.png" /></div><div class="star"><img src="img/star.png" /></div></div>';	
+	html += '<img src="img/sGift1.png" /></div><div class="star"><img src="img/star.png" /></div></div>';	
 	$('body').append(html);
 	$('#share').on('click',function(event){
 		event.stopPropagation();
 		$(this).remove();
 	});
+}
+//
+function game(){
+	
 }
