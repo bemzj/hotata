@@ -135,10 +135,14 @@ function showHome(){
 		$('.look').hide().removeClass('animated rotateInUpRight');
 		$('#rule').show();
 		$('#rule .rule1').on('click',function(){
-			
+			$('.rule img').attr('src','img/ac01.png');
 		});
 		$('#rule .rule2').on('click',function(){
-			
+			$('.rule img').attr('src','img/ac02.png');
+		});
+		$('#rule .rback').on('touchstart',function(){
+			$('#rule').hide();
+			showHome();
 		});
 	});
 }
