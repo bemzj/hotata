@@ -1,3 +1,4 @@
+var cTween;
 $(function(){
 	//礼品查看
 	$('#myGift .giftChild button').on('click',function(){
@@ -100,7 +101,32 @@ $(function(){
     $('#gcity').focus(function(){
     	$(this).blur();
     });
- 	qd(5)
+   	qd(5,function(){
+   		$('#homepage').show();
+   		//弹幕
+   		clearInterval(cTween);
+   		$('#danmu').children().remove();
+		$.get('wx.json',function(data){
+			mydata = data;
+			addDanmu('#danmu','danmuBox',mydata,25);
+		});
+		//
+		$('.mygifts').on('click',function(){
+			$('#homepage').hide();
+			$('#myGift').show();
+		});
+		$('#myGift .rback').on('click',function(){
+			$('#homepage').show();
+			$('#myGift').hide();
+			clearInterval(cTween);
+   			$('#danmu').children().remove();
+			$.get('wx.json',function(data){
+				mydata = data;
+				addDanmu('#danmu','danmuBox',mydata,25);
+			});
+		});
+   	});
+	
 });
 
 //游戏提示
@@ -195,4 +221,40 @@ function qd(num,fun){
 
 				
 }
+//添加弹幕
 
+function addDanmu(id,className,data,time){
+	$(id).append('<div class="ab '+className+'"></div>');
+	var length = 0;
+	for(var i=0;i<data.length;i++)
+	{
+		var html = "";
+		html += '<div class="danmu floatl"><nobr><p>'+data[i].open.open_name+'：刚刚抽取了'+data[i].content+'</p></nobr>';
+		html += '<div class="head"></div></div>';
+		$('.'+className).append(html);
+		
+		length += (parseInt($('.'+className).find('.danmu').eq(i).width())+32);
+	}
+	for(var i=0;i<data.length;i++)
+	{
+		var html = "";
+		html += '<div class="danmu floatl"><nobr><p>'+data[i].open.open_name+'：刚刚抽取了'+data[i].content+'</p></nobr>';
+		html += '<div class="head"></div></div>';
+		$('.'+className).append(html);
+		
+		length += (parseInt($('.'+className).find('.danmu').eq(i).width())+32);
+	}
+	$('.'+className).append('<div class="clearl"></div>');
+	$('.'+className).width(length);
+	$('.'+className).css('left',$(window).width());
+	var start = $(window).width();
+	cTween = setInterval(function(){
+		start-=0.5;
+		if(start==(-length/2)){
+			start=0;
+			$('.'+className).css('left',start+'px');
+		}else{
+			$('.'+className).css('left',start+'px');
+		}
+	},time);
+}

@@ -138,7 +138,7 @@ function showHome(){
 		$('.homep').hide().removeClass('animated fadeInDown');
 		$('.oldNew').hide().removeClass('animated rotateInDownLeft');
 		$('.look').hide().removeClass('animated rotateInUpRight');
-		showHome();
+		$('#llk').show();
 	});
 //	$('.oldNew').on('click',function(){
 //		$('#homepage').hide();

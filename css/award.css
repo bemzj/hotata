@@ -73,10 +73,9 @@
   position: absolute;
   width: 19.2%;
   left: 3.8%;
-  top: 1.5%; }
-  .rback > input {
-    display: block;
-    border: 0;
+  top: 1.5%;
+  display: block; }
+  .rback > img {
     width: 100%; }
 
 #gpop {
