@@ -693,7 +693,7 @@
     width: 100%;
     height: 100%;
     z-index: 11;
-    background-color: rgba(0,0,0,0.75);
+    background-color: rgba(0,0,0,0.7);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -736,5 +736,67 @@
             color: #f6d67d;
             text-align: center;
         }
+    }
+}
+#gOver{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 11;
+    background-color: rgba(0,0,0,0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    display: -webkit-flex;
+    -webkit-align-items: center;
+    -webkit-justify-content: center;
+    -webkit-flex-direction: column;
+    >.gOver{
+        position: relative;
+        width: 80.27%;
+        >img{
+            width: 100%;
+        }
+    }
+    button{
+        position: absolute;
+        bottom: 6%;
+        left: 30%;
+        width: 40%;
+        height: 14%;
+    }
+}
+#changeOver{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 11;
+    background-color: rgba(0,0,0,0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    display: -webkit-flex;
+    -webkit-align-items: center;
+    -webkit-justify-content: center;
+    -webkit-flex-direction: column;
+    >.changeOver{
+        position: relative;
+        width: 80.27%;
+        >img{
+            width: 100%;
+        }
+    }
+    button{
+        position: absolute;
+        bottom: 6%;
+        left: 9%;
+        width: 40%;
+        height: 13%;
     }
 }

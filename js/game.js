@@ -100,11 +100,8 @@ $(function(){
     $('#gcity').focus(function(){
     	$(this).blur();
     });
-    gameTips(function(){
-    	
-    });
     
-    sharing2();
+
 });
 
 //游戏提示
@@ -134,7 +131,18 @@ function sharing2(){
 		$(this).remove();
 	});
 }
-//
-function game(){
-	
+//活动结束
+function gameOver(fun){
+	$('#gOver').remove();
+	var html = "";
+	html += '<div id="gOver"><div class="gOver"><img src="img/game02.png" />';
+	html += '<button></button></div></div>';
+	$('body').append(html);
+	$('#gOver button').on('click',function(event){
+		$('#gOver').remove();
+		if((typeof fun)=='function')
+		{
+			fun();
+		}
+	});
 }
